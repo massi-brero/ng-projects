@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-fail-msg',
+  template: '<div class="alert alert-primary msg">It so totally failed!</div>',
+  styleUrls: ['./fail-msg.component.css']
+})
+export class FailMsgComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

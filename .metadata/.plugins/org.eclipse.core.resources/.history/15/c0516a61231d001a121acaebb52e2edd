@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-success-msg',
+  template: 'success-msg.component.html',
+  styleUrls: ['./success-msg.component.css']
+})
+export class SuccessMsgComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

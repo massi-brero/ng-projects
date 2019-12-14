@@ -1,0 +1,6 @@
+2019-12-11 23:47:50,590 [Worker-10: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-12-12 11:32:16,341 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-12-12 17:59:03,528 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-12-12 18:01:56,917 [Worker-8: Check Injection] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /Users/brero/code/ng-projects/.metadata/com.genuitec.eclipse.webclipse.livepreview/0/store
+2019-12-12 18:01:57,246 [Worker-8: Check Injection] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /Users/brero/code/ng-projects/.metadata/com.genuitec.eclipse.webclipse.livepreview/1/store
+2019-12-12 21:50:29,091 [Worker-63: Check Injection] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /Users/brero/code/ng-projects/.metadata/com.genuitec.eclipse.webclipse.livepreview/2/store

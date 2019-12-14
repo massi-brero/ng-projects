@@ -1,0 +1,4 @@
+.msg {
+	background: lightcoral;
+	font-weight: bold;
+}

@@ -1,0 +1,4 @@
+.msg {
+	font-weight: bold;
+	color: darkred
+}
