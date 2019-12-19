@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-org.eclipse.wst.jsdt.core.PREF_JS_RUNTIME_INSTALLS_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimeSettings/>\n
+org.eclipse.wst.jsdt.core.PREF_JS_RUNTIME_INSTALLS_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimeSettings>\n    <runtimeType defaultRuntime\="__nodejs_version_10.15.0" id\="org.eclipse.wst.jsdt.js.node.runtimeType">\n        <runtime id\="__nodejs_version_10.15.0" name\="Node 10.15.0" path\="/Users/brero/.codemix-store/nodejs/10.15.0/bin/node"/>\n    </runtimeType>\n</runtimeSettings>\n

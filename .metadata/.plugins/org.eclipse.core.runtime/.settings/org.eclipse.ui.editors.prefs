@@ -4,3 +4,5 @@ AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 STS4BootMarkerIndicationColor=54,81,25
 eclipse.preferences.version=1
 overviewRuler_migration=migrated_3.1
+spacesForTabs=true
+tabWidth=2

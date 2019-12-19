@@ -1,0 +1,11 @@
+<div class="form-group">
+  <input type="text"
+    class="form-control"
+    id="inputUser"
+    [(ngModel)]="username">
+  <button class="btn btn-danger"
+    [disabled]="username.length === 0"
+    (click)="resetUserName()">Reset Name</button>
+</div>
+
+<p>{{ username }}</p>

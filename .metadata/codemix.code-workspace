@@ -1,10 +1,27 @@
 {
   "folders": [
     {
-      "path": "/Users/brero/code/ng-projects/massisoft-ng"
+        "path": "/Users/brero/code/ng-projects/assignments/basics-assignment-1-start"
     },
     {
-      "path": "/Users/brero/code/ng-projects/assignments/basics-assignment-1-start"
+        "path": "/Users/brero/code/ng-projects/massisoft-ng"
+    },
+    {
+        "path": "/Users/brero/code/ng-projects/assignments/basics-assignment-3-start"
+    },
+    {
+        "path": "/Users/brero/code/ng-projects/assignments/basics-assignment-2-start"
+    },
+    {
+        "path": "/Users/brero/code/ng-projects/cmp-databinding-start"
+    },
+    {
+        "path": "/Users/brero/code/ng-projects/food-lists"
     }
-  ]
+],
+  "settings": {
+    "html.format.indentInnerHtml": true,
+    "html.format.wrapAttributes": "force",
+    "editor.detectIndentation": false
+  }
 }

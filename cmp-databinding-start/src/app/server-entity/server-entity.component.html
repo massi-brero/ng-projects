@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{ entity.name }}</div>
+  <div class="panel-body">
+    <p>
+      <strong *ngIf="entity.type === 'server'"
+        style="color: red">{{ entity.content }}</strong>
+      <em *ngIf="entity.type === 'blueprint'">{{ entity.content }}</em>
+    </p>
+  </div>
+</div>

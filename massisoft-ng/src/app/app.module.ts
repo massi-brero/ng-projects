@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { FormsModule } from '@angular/forms';
 import { ServersComponent } from './servers/servers.component';
-//import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -17,7 +16,6 @@ import { ServersComponent } from './servers/servers.component';
   imports: [
     BrowserModule,
     FormsModule
-    //,HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="installedFeatures">
-		<item value="com.genuitec.eclipse.code.angularide.feature:3.6.0.201911131444"/>
-		<item value="com.genuitec.eclipse.code.feature:3.6.0.201911131444"/>
+		<item value="com.genuitec.eclipse.code.angularide.feature:3.6.0.201912111708"/>
+		<item value="com.genuitec.eclipse.code.feature:3.6.0.201912111708"/>
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
 		<item value="org.eclipse.buildship:3.1.2.v20190903-1802"/>
 		<item value="org.eclipse.egit.gitflow.feature:5.5.0.201909110433-r"/>
@@ -40,10 +40,10 @@
 		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>
 		<item value="org.sonatype.m2e.egit.feature:0.15.1.201806191431"/>
 		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.4.201905300046"/>
-		<item value="pack.angular:3.6.0.201911131444"/>
+		<item value="pack.angular:3.6.0.201912111708"/>
 	</list>
 	<section name="com.genuitec.eclipse.code.angular.ui.project.ImportAngularProjectRootArea">
-		<item key="OUTSIDE_LOCATION" value="/Users/brero/code/ng-projects/assignments/basics-assignment-1-start"/>
+		<item key="OUTSIDE_LOCATION" value="/Users/brero/code/ng-projects/cmp-databinding-start"/>
 	</section>
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
@@ -57,5 +57,19 @@
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode/&gt;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="660"/>
+			<item key="DIALOG_Y_ORIGIN" value="195"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
 	</section>
 </section>
