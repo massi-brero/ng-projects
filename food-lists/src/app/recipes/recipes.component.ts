@@ -7,7 +7,7 @@ import { Recipe } from './recipe.model';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-  recipe: Recipe;
+  selectedRecipe: Recipe;
 
   constructor() { }
 
@@ -15,7 +15,7 @@ export class RecipesComponent implements OnInit {
   }
 
   addSelectedRecipe(recipe: Recipe) {
-    this.recipe = recipe;
+    this.selectedRecipe = recipe;
   }
 
 }
