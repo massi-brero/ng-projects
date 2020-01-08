@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_PuTM4BxoEeqvlJwaiEk98Q" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_PuTM4RxoEeqvlJwaiEk98Q" bindingContexts="_PuTM6hxoEeqvlJwaiEk98Q">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;cockpit.component.html&quot; tooltip=&quot;cmp-databinding-start/src/app/cockpit/cockpit.component.html&quot;>&#xA;&lt;persistable path=&quot;/cmp-databinding-start/src/app/cockpit/cockpit.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;app.component.html&quot; tooltip=&quot;cmp-databinding-start/src/app/app.component.html&quot;>&#xA;&lt;persistable path=&quot;/cmp-databinding-start/src/app/app.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;server-entity.component.html&quot; tooltip=&quot;cmp-databinding-start/src/app/server-entity/server-entity.component.html&quot;>&#xA;&lt;persistable path=&quot;/cmp-databinding-start/src/app/server-entity/server-entity.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;cockpit.component.ts&quot; tooltip=&quot;cmp-databinding-start/src/app/cockpit/cockpit.component.ts&quot;>&#xA;&lt;persistable path=&quot;/cmp-databinding-start/src/app/cockpit/cockpit.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;server-entity.component.ts&quot; tooltip=&quot;cmp-databinding-start/src/app/server-entity/server-entity.component.ts&quot;>&#xA;&lt;persistable path=&quot;/cmp-databinding-start/src/app/server-entity/server-entity.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;recipes.component.ts&quot; tooltip=&quot;food-lists/src/app/recipes/recipes.component.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/recipes/recipes.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;recipes.component.html&quot; tooltip=&quot;food-lists/src/app/recipes/recipes.component.html&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/recipes/recipes.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;recipes-details.component.html&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-details/recipes-details.component.html&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/recipes/recipes-details/recipes-details.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;recipes-details.component.ts&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-details/recipes-details.component.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/recipes/recipes-details/recipes-details.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;recipes-list.component.ts&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-list/recipes-list.component.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/recipes/recipes-list/recipes-list.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;recipes-item.component.ts&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-list/recipes-item/recipes-item.component.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/recipes/recipes-list/recipes-item/recipes-item.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;recipes-item.component.html&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-list/recipes-item/recipes-item.component.html&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/recipes/recipes-list/recipes-item/recipes-item.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;recipes-list.component.html&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-list/recipes-list.component.html&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/recipes/recipes-list/recipes-list.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.component.ts&quot; tooltip=&quot;food-lists/src/app/app.component.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/app.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;header.component.ts&quot; tooltip=&quot;food-lists/src/app/header/header.component.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/header/header.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;header.component.spec.ts&quot; tooltip=&quot;food-lists/src/app/header/header.component.spec.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/header/header.component.spec.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;header.component.html&quot; tooltip=&quot;food-lists/src/app/header/header.component.html&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/header/header.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;app.component.html&quot; tooltip=&quot;food-lists/src/app/app.component.html&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/app.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.component.ts&quot; tooltip=&quot;cmp-databinding-start/src/app/app.component.ts&quot;>&#xA;&lt;persistable path=&quot;/cmp-databinding-start/src/app/app.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.css&quot; name=&quot;odd.component.css&quot; tooltip=&quot;assign-4/src/app/odd/odd.component.css&quot;>&#xA;&lt;persistable path=&quot;/assign-4/src/app/odd/odd.component.css&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.component.ts&quot; tooltip=&quot;food-lists/src/app/app.component.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/app.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;counter.service.ts&quot; tooltip=&quot;services-assignment-start/src/app/services/counter.service.ts&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/services/counter.service.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;active-users.component.ts&quot; tooltip=&quot;services-assignment-start/src/app/active-users/active-users.component.ts&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/active-users/active-users.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;account.component.ts&quot; tooltip=&quot;server-services/src/app/account/account.component.ts&quot;>&#xA;&lt;persistable path=&quot;/server-services/src/app/account/account.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;account.component.html&quot; tooltip=&quot;server-services/src/app/account/account.component.html&quot;>&#xA;&lt;persistable path=&quot;/server-services/src/app/account/account.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;app.component.html&quot; tooltip=&quot;server-services/src/app/app.component.html&quot;>&#xA;&lt;persistable path=&quot;/server-services/src/app/app.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.component.ts&quot; tooltip=&quot;server-services/src/app/app.component.ts&quot;>&#xA;&lt;persistable path=&quot;/server-services/src/app/app.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.module.ts&quot; tooltip=&quot;services-assignment-start/src/app/app.module.ts&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/app.module.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.module.ts&quot; tooltip=&quot;server-services/src/app/app.module.ts&quot;>&#xA;&lt;persistable path=&quot;/server-services/src/app/app.module.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;new-account.component.ts&quot; tooltip=&quot;server-services/src/app/new-account/new-account.component.ts&quot;>&#xA;&lt;persistable path=&quot;/server-services/src/app/new-account/new-account.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;accounts.service.ts&quot; tooltip=&quot;server-services/src/app/services/accounts.service.ts&quot;>&#xA;&lt;persistable path=&quot;/server-services/src/app/services/accounts.service.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;logging.service.ts&quot; tooltip=&quot;server-services/src/app/services/logging.service.ts&quot;>&#xA;&lt;persistable path=&quot;/server-services/src/app/services/logging.service.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;user.service.ts&quot; tooltip=&quot;services-assignment-start/src/app/services/user.service.ts&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/services/user.service.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;inactive-users.component.ts&quot; tooltip=&quot;services-assignment-start/src/app/inactive-users/inactive-users.component.ts&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/inactive-users/inactive-users.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;inactive-users.component.html&quot; tooltip=&quot;services-assignment-start/src/app/inactive-users/inactive-users.component.html&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/inactive-users/inactive-users.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;active-users.component.html&quot; tooltip=&quot;services-assignment-start/src/app/active-users/active-users.component.html&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/active-users/active-users.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.component.ts&quot; tooltip=&quot;services-assignment-start/src/app/app.component.ts&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/app.component.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;app.component.html&quot; tooltip=&quot;services-assignment-start/src/app/app.component.html&quot;>&#xA;&lt;persistable path=&quot;/services-assignment-start/src/app/app.component.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;dropdown.directive.ts&quot; tooltip=&quot;food-lists/src/app/shared/dropdown.directive.ts&quot;>&#xA;&lt;persistable path=&quot;/food-lists/src/app/shared/dropdown.directive.ts&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>ModelMigrationProcessor.001</tags>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_PuTM4RxoEeqvlJwaiEk98Q" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_QEm0EBxoEeqvlJwaiEk98Q" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1440" height="900">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_PuTM4RxoEeqvlJwaiEk98Q" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_QEm0EBxoEeqvlJwaiEk98Q" label="%trimmedwindow.label.eclipseSDK" x="-27" y="-893" width="1920" height="1057">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -146,10 +146,10 @@
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_QLvW3xxoEeqvlJwaiEk98Q" containerData="8236" selectedElement="_QLvW4RxoEeqvlJwaiEk98Q">
               <children xsi:type="advanced:Placeholder" xmi:id="_QLvW4RxoEeqvlJwaiEk98Q" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_QLiigBxoEeqvlJwaiEk98Q"/>
-              <children xsi:type="basic:PartStack" xmi:id="_QLvW6BxoEeqvlJwaiEk98Q" elementId="bottom" containerData="2500" selectedElement="_QLvW8xxoEeqvlJwaiEk98Q">
+              <children xsi:type="basic:PartStack" xmi:id="_QLvW6BxoEeqvlJwaiEk98Q" elementId="bottom" containerData="2500" selectedElement="_QLvW8hxoEeqvlJwaiEk98Q">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <tags>Terminal</tags>
-                <tags>noFocus</tags>
+                <tags>Git</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_QLvW6RxoEeqvlJwaiEk98Q" elementId="org.eclipse.ui.views.ProblemView" ref="_QLopIxxoEeqvlJwaiEk98Q" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -186,7 +186,7 @@
                   <tags>View</tags>
                   <tags>categoryTag:CodeMix</tags>
                 </children>
-                <children xsi:type="advanced:Placeholder" xmi:id="_QLvW8hxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.ui.welcome.view" toBeRendered="false" ref="_QLuIshxoEeqvlJwaiEk98Q" closeable="true">
+                <children xsi:type="advanced:Placeholder" xmi:id="_QLvW8hxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.ui.welcome.view" ref="_QLuIshxoEeqvlJwaiEk98Q" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:CodeMix</tags>
                 </children>
@@ -197,6 +197,10 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_HslVwR0DEeqbJN6mqZ9OLQ" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView:1" toBeRendered="false" ref="_HslVwB0DEeqbJN6mqZ9OLQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Terminal</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_EWdBYTGREeqhLvteX3vsAg" elementId="org.eclipse.egit.ui.StagingView" ref="_EWdBYDGREeqhLvteX3vsAg" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:Git</tags>
                 </children>
               </children>
             </children>
@@ -244,95 +248,17 @@
       <toolbar xmi:id="_9q3R0R0FEeqbJN6mqZ9OLQ" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_QLiigBxoEeqvlJwaiEk98Q" elementId="org.eclipse.ui.editorss" selectedElement="_QLiigRxoEeqvlJwaiEk98Q">
-      <children xsi:type="basic:PartStack" xmi:id="_QLiigRxoEeqvlJwaiEk98Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_70YHcCM-Eeq40fPxfGzQFQ">
+      <children xsi:type="basic:PartStack" xmi:id="_QLiigRxoEeqvlJwaiEk98Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_lLtuUDItEeqqbtyPbL52Uw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_Dms7oCM8Eeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="app.component.html" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/cc6d2e/e37933/\E03F/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;app.component.html&quot; partName=&quot;app.component.html&quot; title=&quot;app.component.html&quot; tooltip=&quot;food-lists/src/app/app.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/app.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;288&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_LzWM8CM8Eeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="header.component.html" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/cc6d2e/e37933/\E03F/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;header.component.html&quot; partName=&quot;header.component.html&quot; title=&quot;header.component.html&quot; tooltip=&quot;food-lists/src/app/header/header.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/header/header.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;764&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_SA8iMCM9Eeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="app.component.ts" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/498ba7/519aba/\E083/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.component.ts&quot; partName=&quot;app.component.ts&quot; title=&quot;app.component.ts&quot; tooltip=&quot;food-lists/src/app/app.component.ts&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/app.component.ts&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;306&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_lLtuUDItEeqqbtyPbL52Uw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="app.component.ts" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;app.component.ts&quot; partName=&quot;app.component.ts&quot; title=&quot;app.component.ts&quot; tooltip=&quot;food-lists/src/app/app.component.ts&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/app.component.ts&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;-1&quot; selectionOffset=&quot;-1&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>com.genuitec.eclipse.code.typescript</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_70YHcCM-Eeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="recipes-list.component.html" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/cc6d2e/e37933/\E03F/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;recipes-list.component.html&quot; partName=&quot;recipes-list.component.html&quot; title=&quot;recipes-list.component.html&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-list/recipes-list.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/recipes/recipes-list/recipes-list.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;303&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_CS0KgCM_Eeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="recipes-item.component.html" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;recipes-item.component.html&quot; partName=&quot;recipes-item.component.html&quot; title=&quot;recipes-item.component.html&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-list/recipes-item/recipes-item.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/recipes/recipes-list/recipes-item/recipes-item.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;378&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_hDSjMCNBEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="recipes-item.component.ts" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;recipes-item.component.ts&quot; partName=&quot;recipes-item.component.ts&quot; title=&quot;recipes-item.component.ts&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-list/recipes-item/recipes-item.component.ts&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/recipes/recipes-list/recipes-item/recipes-item.component.ts&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;446&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.typescript</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_qhuMgCNBEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="recipes-list.component.ts" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/498ba7/519aba/\E083/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;recipes-list.component.ts&quot; partName=&quot;recipes-list.component.ts&quot; title=&quot;recipes-list.component.ts&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-list/recipes-list.component.ts&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/recipes/recipes-list/recipes-list.component.ts&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;592&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.typescript</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_mqkX8CNFEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="recipes-details.component.ts" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/498ba7/519aba/\E083/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;recipes-details.component.ts&quot; partName=&quot;recipes-details.component.ts&quot; title=&quot;recipes-details.component.ts&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-details/recipes-details.component.ts&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/recipes/recipes-details/recipes-details.component.ts&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;381&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.typescript</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_nJKYcCNFEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="recipes-details.component.html" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/cc6d2e/e37933/\E03F/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;recipes-details.component.html&quot; partName=&quot;recipes-details.component.html&quot; title=&quot;recipes-details.component.html&quot; tooltip=&quot;food-lists/src/app/recipes/recipes-details/recipes-details.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/recipes/recipes-details/recipes-details.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;-1&quot; selectionOffset=&quot;-1&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_-GblcCNFEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="recipes.component.html" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/cc6d2e/e37933/\E03F/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;recipes.component.html&quot; partName=&quot;recipes.component.html&quot; title=&quot;recipes.component.html&quot; tooltip=&quot;food-lists/src/app/recipes/recipes.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/food-lists/src/app/recipes/recipes.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;182&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_V68cICNJEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="app.component.html" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/cc6d2e/e37933/\E03F/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;app.component.html&quot; partName=&quot;app.component.html&quot; title=&quot;app.component.html&quot; tooltip=&quot;cmp-databinding-start/src/app/app.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/cmp-databinding-start/src/app/app.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;-1&quot; selectionOffset=&quot;-1&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_iQpNgCNJEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="cockpit.component.ts" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/498ba7/519aba/\E083/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.typescript&quot; name=&quot;cockpit.component.ts&quot; partName=&quot;cockpit.component.ts&quot; title=&quot;cockpit.component.ts&quot; tooltip=&quot;cmp-databinding-start/src/app/cockpit/cockpit.component.ts&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/cmp-databinding-start/src/app/cockpit/cockpit.component.ts&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;11&quot; selectionOffset=&quot;679&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.typescript</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_JVVKACNKEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="server-entity.component.html" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/cc6d2e/e37933/\E03F/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;server-entity.component.html&quot; partName=&quot;server-entity.component.html&quot; title=&quot;server-entity.component.html&quot; tooltip=&quot;cmp-databinding-start/src/app/server-entity/server-entity.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/cmp-databinding-start/src/app/server-entity/server-entity.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;223&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_bejZMCNKEeq40fPxfGzQFQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="cockpit.component.html" iconURI="codemixicon://fonticon/file%3A%2FApplications%2FSpringToolSuite4.app%2FContents%2FEclipse%2Fplugins%2Fcom.genuitec.eclipse.code.engine.app.macos_3.6.0.201910290238%2Fengine%2FCodeMix+Engine.app%2FContents%2FResources%2Fapp%2Fextensions%2Ftheme-seti%2Ficons%2Fseti.woff/cc6d2e/e37933/\E03F/icon.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.genuitec.eclipse.code.html&quot; name=&quot;cockpit.component.html&quot; partName=&quot;cockpit.component.html&quot; title=&quot;cockpit.component.html&quot; tooltip=&quot;cmp-databinding-start/src/app/cockpit/cockpit.component.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/cmp-databinding-start/src/app/cockpit/cockpit.component.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;-1&quot; selectionOffset=&quot;-1&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.genuitec.eclipse.code.html</tags>
         </children>
       </children>
     </sharedElements>
@@ -467,7 +393,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_PREoICC3EeqwwpbceaGq4Q" elementId="com.genuitec.eclipse.code.ui.terminal.plus"/>
+      <toolbar xmi:id="_PREoICC3EeqwwpbceaGq4Q" elementId="com.genuitec.eclipse.code.ui.terminal.plus" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_QLuIsRxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.tutorial.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Tutorial" iconURI="platform:/plugin/com.genuitec.eclipse.tutorial.ui/icons/viewIcon.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.genuitec.eclipse.tutorial.ui.TutorialView"/>
@@ -478,8 +404,14 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_QLuIshxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.ui.welcome.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="CodeMix" iconURI="platform:/plugin/com.genuitec.eclipse.code.ui.welcome/images/CodeMix-icon-16px.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.genuitec.eclipse.code.ui.welcome.view.CodeMixWelcomeView"/>
       <persistedState key="originalCompatibilityViewBundle" value="com.genuitec.eclipse.code.ui.welcome"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:CodeMix</tags>
+      <menus xmi:id="_1-z_cDIqEeqqbtyPbL52Uw" elementId="com.genuitec.eclipse.code.ui.welcome.view">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_1-z_cTIqEeqqbtyPbL52Uw" elementId="com.genuitec.eclipse.code.ui.welcome.view"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_QLuIsxxoEeqvlJwaiEk98Q" elementId="org.eclipse.egit.ui.RepositoriesView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Git Repositories" iconURI="platform:/plugin/org.eclipse.egit.ui/icons/eview16/repo_rep.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.egit.ui.internal.repository.RepositoriesView"/>
@@ -497,7 +429,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_ZV_HUR0BEeqbJN6mqZ9OLQ" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView"/>
+      <toolbar xmi:id="_ZV_HUR0BEeqbJN6mqZ9OLQ" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_QLuvwRxoEeqvlJwaiEk98Q" elementId="org.eclipse.jdt.junit.ResultView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="JUnit" iconURI="platform:/plugin/org.eclipse.jdt.junit/icons/full/eview16/junit.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.jdt.internal.junit.ui.TestRunnerViewPart"/>
@@ -535,6 +467,18 @@
       </menus>
       <toolbar xmi:id="_HspnMR0DEeqbJN6mqZ9OLQ" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" visible="false"/>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_EWdBYDGREeqhLvteX3vsAg" elementId="org.eclipse.egit.ui.StagingView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Git Staging" iconURI="platform:/plugin/org.eclipse.egit.ui/icons/eview16/staging.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.egit.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.egit.ui.internal.staging.StagingView"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Git</tags>
+      <menus xmi:id="_EW0NwDGREeqhLvteX3vsAg" elementId="org.eclipse.egit.ui.StagingView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_EW0NwTGREeqhLvteX3vsAg" elementId="org.eclipse.egit.ui.StagingView" visible="false"/>
+    </sharedElements>
     <trimBars xmi:id="_PuTM4hxoEeqvlJwaiEk98Q" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.platform">
       <children xsi:type="menu:ToolBar" xmi:id="_QFkdYBxoEeqvlJwaiEk98Q" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -542,7 +486,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_QFlEcBxoEeqvlJwaiEk98Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_14-u0CTlEeqULpgCfhjqNQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_PusOmRxoEeqvlJwaiEk98Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_vHMAUDIqEeqqbtyPbL52Uw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_PusOmRxoEeqvlJwaiEk98Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_QFlEcRxoEeqvlJwaiEk98Q" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -554,6 +498,9 @@
       <children xsi:type="menu:ToolBar" xmi:id="_QFlrgRxoEeqvlJwaiEk98Q" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_QFlrghxoEeqvlJwaiEk98Q" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_RdF7YDEsEeq0FO89ZmNlag" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_QNCXUBxoEeqvlJwaiEk98Q" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
@@ -570,7 +517,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_QFlrhRxoEeqvlJwaiEk98Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_14_V4yTlEeqULpgCfhjqNQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_PurnmhxoEeqvlJwaiEk98Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_vHOckDIqEeqqbtyPbL52Uw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_PurnmhxoEeqvlJwaiEk98Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_QRVBcBxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.css" visible="false">
         <tags>Draggable</tags>
@@ -1060,7 +1007,8 @@
     <bindings xmi:id="_Q3RnIhxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+P" command="_PuokNBxoEeqvlJwaiEk98Q">
       <tags>type:user</tags>
     </bindings>
-    <bindings xmi:id="_1kgToSTlEeqULpgCfhjqNQ" keySequence="COMMAND+CTRL+F" command="_PvijAxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55e7lDE1EeqhLvteX3vsAg" keySequence="ALT+5" command="_55F6ADE1EeqhLvteX3vsAg"/>
+    <bindings xmi:id="_uxyYEDIqEeqqbtyPbL52Uw" keySequence="COMMAND+CTRL+F" command="_PvijAxxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_Pu-iVRxoEeqvlJwaiEk98Q" elementId="org.eclipse.wst.jsdt.ui.javascriptViewScope" bindingContext="_Puuq4BxoEeqvlJwaiEk98Q">
     <bindings xmi:id="_Pu-iVhxoEeqvlJwaiEk98Q" keySequence="ALT+COMMAND+Q D" command="_PurnahxoEeqvlJwaiEk98Q">
@@ -1115,20 +1063,7 @@
     </bindings>
     <bindings xmi:id="_PvHFURxoEeqvlJwaiEk98Q" keySequence="COMMAND+G" command="_PurAuhxoEeqvlJwaiEk98Q"/>
   </bindingTables>
-  <bindingTables xmi:id="_Pu_JahxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.inlinesearch.context" bindingContext="_PuuqyhxoEeqvlJwaiEk98Q">
-    <bindings xmi:id="_Pu_JaxxoEeqvlJwaiEk98Q" keySequence="ALT+SHIFT+CR" command="_PuokXhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_Pu_JdxxoEeqvlJwaiEk98Q" keySequence="ALT+SHIFT+1" command="_PurAlRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvBlvRxoEeqvlJwaiEk98Q" keySequence="COMMAND+ARROW_UP" command="_PusO4BxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvBlvhxoEeqvlJwaiEk98Q" keySequence="COMMAND+ARROW_DOWN" command="_PuqZYBxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvCzyRxoEeqvlJwaiEk98Q" keySequence="ALT+DEL" command="_PurAfhxoEeqvlJwaiEk98Q">
-      <tags>platform:cocoa</tags>
-    </bindings>
-    <bindings xmi:id="_PvDa3xxoEeqvlJwaiEk98Q" keySequence="COMMAND+DEL" command="_PurAfhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvHsRhxoEeqvlJwaiEk98Q" keySequence="ALT+BS" command="_PuqZoBxoEeqvlJwaiEk98Q">
-      <tags>platform:cocoa</tags>
-    </bindings>
-    <bindings xmi:id="_PvHsUBxoEeqvlJwaiEk98Q" keySequence="COMMAND+BS" command="_PuqZoBxoEeqvlJwaiEk98Q"/>
-  </bindingTables>
+  <bindingTables xmi:id="_Pu_JahxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.inlinesearch.context" bindingContext="_PuuqyhxoEeqvlJwaiEk98Q"/>
   <bindingTables xmi:id="_Pu_JbBxoEeqvlJwaiEk98Q" elementId="org.eclipse.core.runtime.xml" bindingContext="_PuuqvxxoEeqvlJwaiEk98Q">
     <bindings xmi:id="_Pu_JbRxoEeqvlJwaiEk98Q" keySequence="CTRL+SHIFT+P" command="_PurnyhxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_Pu_JeBxoEeqvlJwaiEk98Q" keySequence="CTRL+SHIFT+D" command="_PupyahxoEeqvlJwaiEk98Q"/>
@@ -1209,13 +1144,11 @@
     <bindings xmi:id="_PvEpAhxoEeqvlJwaiEk98Q" keySequence="COMMAND+/" command="_Pumu9RxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvFQCRxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+C" command="_Pumu9RxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvFQGhxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+F" command="_PuokUhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvGeIBxoEeqvlJwaiEk98Q" keySequence="ESC" command="_PurnshxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvGeRBxoEeqvlJwaiEk98Q" keySequence="COMMAND+J" command="_PunWERxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvGeRRxoEeqvlJwaiEk98Q" keySequence="COMMAND+K" command="_PurAuBxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvGeSBxoEeqvlJwaiEk98Q" keySequence="COMMAND+L" command="_PusOgBxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvHFNxxoEeqvlJwaiEk98Q" keySequence="COMMAND+O" command="_PuqZbhxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvHFShxoEeqvlJwaiEk98Q" keySequence="COMMAND+D" command="_PunWIhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvHFThxoEeqvlJwaiEk98Q" keySequence="COMMAND+F" command="_PupyRxxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvHFUxxoEeqvlJwaiEk98Q" keySequence="COMMAND+=" command="_PurAlhxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvHsQRxoEeqvlJwaiEk98Q" keySequence="SHIFT+CR" command="_PusO6RxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvHsQhxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+CR" command="_PusOoxxoEeqvlJwaiEk98Q"/>
@@ -1390,61 +1323,52 @@
     <bindings xmi:id="_Pu_wghxoEeqvlJwaiEk98Q" keySequence="ALT+SHIFT+V" command="_PupySRxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvEo9hxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+M" command="_PuokPBxoEeqvlJwaiEk98Q"/>
   </bindingTables>
-  <bindingTables xmi:id="_Pu_wfhxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.meExplorerScope" bindingContext="_Puuq0RxoEeqvlJwaiEk98Q">
-    <bindings xmi:id="_Pu_wfxxoEeqvlJwaiEk98Q" keySequence="ALT+SHIFT+R" command="_PumvJRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_Pu_wgxxoEeqvlJwaiEk98Q" keySequence="ALT+SHIFT+V" command="_PumvBRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvFQARxoEeqvlJwaiEk98Q" keySequence="ALT+COMMAND+R" command="_PumvJRxoEeqvlJwaiEk98Q">
-      <tags>platform:cocoa</tags>
-    </bindings>
-    <bindings xmi:id="_PvFQIRxoEeqvlJwaiEk98Q" keySequence="ALT+COMMAND+V" command="_PumvBRxoEeqvlJwaiEk98Q">
-      <tags>platform:cocoa</tags>
-    </bindings>
-  </bindingTables>
+  <bindingTables xmi:id="_Pu_wfhxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.meExplorerScope" bindingContext="_Puuq0RxoEeqvlJwaiEk98Q"/>
   <bindingTables xmi:id="_Pu_wgBxoEeqvlJwaiEk98Q" elementId="org.eclipse.debug.ui.console" bindingContext="_PuuqzhxoEeqvlJwaiEk98Q">
     <bindings xmi:id="_Pu_wgRxoEeqvlJwaiEk98Q" keySequence="CTRL+D" command="_Pus1lhxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvGeMRxoEeqvlJwaiEk98Q" keySequence="COMMAND+R" command="_PuqZmBxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_Pu_wiBxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.codeMixEditorScope" bindingContext="_Puuq3RxoEeqvlJwaiEk98Q">
-    <bindings xmi:id="_Pu_wiRxoEeqvlJwaiEk98Q" keySequence="COMMAND+NUMPAD_ADD" command="_PumvFRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_Pu_wixxoEeqvlJwaiEk98Q" keySequence="COMMAND+NUMPAD_SUBTRACT" command="_PupydhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvAXhBxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+NUMPAD_MULTIPLY" command="_PurAbRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvAXhxxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+NUMPAD_DIVIDE" command="_PuokZBxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvAXjRxoEeqvlJwaiEk98Q" keySequence="ALT+ARROW_UP" command="_PuokEhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvAXkRxoEeqvlJwaiEk98Q" keySequence="ALT+ARROW_DOWN" command="_PuokWxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvBlsRxoEeqvlJwaiEk98Q" keySequence="F3" command="_PurAiRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvCzyxxoEeqvlJwaiEk98Q" keySequence="ALT+DEL" command="_PunV_RxoEeqvlJwaiEk98Q">
-      <tags>platform:cocoa</tags>
-    </bindings>
-    <bindings xmi:id="_PvCz0hxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+DEL" command="_PurnjRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvCz2hxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+b" command="_Pus1txxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvDa0RxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+X" command="_PuokJxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvDa0xxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+Y" command="_PumvFhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvDa1RxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+[" command="_PunWJhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvDa3BxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+\" command="_PusOwxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvDa3RxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+]" command="_PupLZxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvEB6xxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+U" command="_PupLMhxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvEB7BxoEeqvlJwaiEk98Q" keySequence="ALT+COMMAND+E" command="_PuqZURxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvEB9xxoEeqvlJwaiEk98Q" keySequence="COMMAND+7" command="_PumvGxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvECAhxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+I" command="_PurncxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvEo-BxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+M" command="_PuqZThxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvEpAxxoEeqvlJwaiEk98Q" keySequence="COMMAND+/" command="_PumvGxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvEpCxxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+A" command="_PusOnxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvFQABxoEeqvlJwaiEk98Q" keySequence="ALT+COMMAND+R" command="_PurAmRxoEeqvlJwaiEk98Q">
-      <tags>platform:cocoa</tags>
-    </bindings>
-    <bindings xmi:id="_PvFQChxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+C" command="_PumvGxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvFQHxxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+F" command="_PuqZUxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvF3FRxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+G" command="_PuqZSxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvF3GhxoEeqvlJwaiEk98Q" keySequence="ALT+COMMAND+J" command="_PupLVxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvGeORxoEeqvlJwaiEk98Q" keySequence="COMMAND+U" command="_Pun9NRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvHFOxxoEeqvlJwaiEk98Q" keySequence="COMMAND+O" command="_PuqZlBxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvHFPRxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+/" command="_PusOwxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvHFSxxoEeqvlJwaiEk98Q" keySequence="COMMAND+D" command="_PuokMRxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvHsSBxoEeqvlJwaiEk98Q" keySequence="ALT+BS" command="_PusOdxxoEeqvlJwaiEk98Q">
-      <tags>platform:cocoa</tags>
-    </bindings>
     <bindings xmi:id="_Q3RnIBxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+T" command="_PusOcRxoEeqvlJwaiEk98Q">
       <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_55Y08DE1EeqhLvteX3vsAg" keySequence="COMMAND+NUMPAD_ADD" command="_PumvFRxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55Y08TE1EeqhLvteX3vsAg" keySequence="COMMAND+NUMPAD_SUBTRACT" command="_PupydhxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55Y08jE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+NUMPAD_MULTIPLY" command="_PurAbRxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55ZcADE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+NUMPAD_DIVIDE" command="_PuokZBxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55ZcATE1EeqhLvteX3vsAg" keySequence="ALT+ARROW_UP" command="_PuokEhxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55ZcAjE1EeqhLvteX3vsAg" keySequence="ALT+ARROW_DOWN" command="_PuokWxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55aqIDE1EeqhLvteX3vsAg" keySequence="F3" command="_PurAiRxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55bRMDE1EeqhLvteX3vsAg" keySequence="ALT+DEL" command="_PunV_RxoEeqvlJwaiEk98Q">
+      <tags>platform:cocoa</tags>
+    </bindings>
+    <bindings xmi:id="_55bRMTE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+DEL" command="_PurnjRxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55b4QDE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+b" command="_Pus1txxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55b4QTE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+X" command="_PuokJxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55b4QjE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+Y" command="_PumvFhxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55b4QzE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+[" command="_PunWJhxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55b4RDE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+\" command="_PusOwxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55b4RTE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+]" command="_PupLZxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55cfUDE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+U" command="_PupLMhxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55cfUTE1EeqhLvteX3vsAg" keySequence="ALT+COMMAND+E" command="_PuqZURxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55cfUzE1EeqhLvteX3vsAg" keySequence="COMMAND+7" command="_PumvGxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55cfVTE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+I" command="_PurncxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55dGYDE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+M" command="_PuqZThxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55dGYTE1EeqhLvteX3vsAg" keySequence="COMMAND+/" command="_PumvGxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55dGYjE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+A" command="_PusOnxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55dGYzE1EeqhLvteX3vsAg" keySequence="ALT+COMMAND+R" command="_PurAmRxoEeqvlJwaiEk98Q">
+      <tags>platform:cocoa</tags>
+    </bindings>
+    <bindings xmi:id="_55dGZDE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+C" command="_PumvGxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55dtcDE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+F" command="_PuqZUxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55dtcTE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+G" command="_PuqZSxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55dtcjE1EeqhLvteX3vsAg" keySequence="ALT+COMMAND+J" command="_PupLVxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55eUgDE1EeqhLvteX3vsAg" keySequence="COMMAND+U" command="_Pun9NRxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55e7kDE1EeqhLvteX3vsAg" keySequence="COMMAND+O" command="_PuqZlBxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55e7kTE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+/" command="_PusOwxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55e7kzE1EeqhLvteX3vsAg" keySequence="COMMAND+D" command="_PuokMRxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55e7lTE1EeqhLvteX3vsAg" keySequence="ALT+BS" command="_PusOdxxoEeqvlJwaiEk98Q">
+      <tags>platform:cocoa</tags>
     </bindings>
   </bindingTables>
   <bindingTables xmi:id="_PvAXihxoEeqvlJwaiEk98Q" elementId="org.eclipse.tm.terminal.EditContext" bindingContext="_PuuqsBxoEeqvlJwaiEk98Q">
@@ -1462,10 +1386,10 @@
     </bindings>
   </bindingTables>
   <bindingTables xmi:id="_PvA-lhxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.ui.terminal.plus.EditContext" bindingContext="_PuuqzRxoEeqvlJwaiEk98Q">
-    <bindings xmi:id="_PvA-lxxoEeqvlJwaiEk98Q" keySequence="SHIFT+INSERT" command="_PupLSxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvBlpRxoEeqvlJwaiEk98Q" keySequence="COMMAND+INSERT" command="_PusOpBxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvEB8BxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+V" command="_PupLSxxoEeqvlJwaiEk98Q"/>
-    <bindings xmi:id="_PvFQCxxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+C" command="_PusOpBxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55aDEDE1EeqhLvteX3vsAg" keySequence="SHIFT+INSERT" command="_PupLSxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55aDETE1EeqhLvteX3vsAg" keySequence="COMMAND+INSERT" command="_PusOpBxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55cfUjE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+V" command="_PupLSxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55dGZTE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+C" command="_PusOpBxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_PvA-mBxoEeqvlJwaiEk98Q" elementId="org.eclipse.ant.ui.AntEditorScope" bindingContext="_PuuqxRxoEeqvlJwaiEk98Q">
     <bindings xmi:id="_PvA-mRxoEeqvlJwaiEk98Q" keySequence="SHIFT+F2" command="_PuqZnxxoEeqvlJwaiEk98Q"/>
@@ -1548,7 +1472,7 @@
     <bindings xmi:id="_PvEB_xxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+I" command="_Pus1kxxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_PvECABxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.codeMixEditorDebugScope" bindingContext="_Puuq4xxoEeqvlJwaiEk98Q">
-    <bindings xmi:id="_PvECARxoEeqvlJwaiEk98Q" keySequence="COMMAND+SHIFT+I" command="_PurnmxxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55cfVDE1EeqhLvteX3vsAg" keySequence="COMMAND+SHIFT+I" command="_PurnmxxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_PvEo_RxoEeqvlJwaiEk98Q" elementId="org.dadacoalition.yedit.yeditScope" bindingContext="_Puuq4RxoEeqvlJwaiEk98Q">
     <bindings xmi:id="_PvEo_hxoEeqvlJwaiEk98Q" keySequence="COMMAND+/" command="_PumvAhxoEeqvlJwaiEk98Q"/>
@@ -1575,14 +1499,14 @@
     <bindings xmi:id="_PvHFQxxoEeqvlJwaiEk98Q" keySequence="COMMAND+C" command="_Pun9BRxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_PvHFRRxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.tutorial.ui.context" bindingContext="_PuuqtxxoEeqvlJwaiEk98Q">
-    <bindings xmi:id="_PvHFRhxoEeqvlJwaiEk98Q" keySequence="COMMAND+C" command="_PupLWBxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_55e7kjE1EeqhLvteX3vsAg" keySequence="COMMAND+C" command="_PupLWBxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_PvHsSRxoEeqvlJwaiEk98Q" elementId="org.eclipse.debug.ui.BreakpointView" bindingContext="_PuuqsRxoEeqvlJwaiEk98Q">
     <bindings xmi:id="_PvHsShxoEeqvlJwaiEk98Q" keySequence="ALT+CR" command="_PuqZVxxoEeqvlJwaiEk98Q"/>
     <bindings xmi:id="_PvHsURxoEeqvlJwaiEk98Q" keySequence="COMMAND+CR" command="_PunWCBxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_PvjKFhxoEeqvlJwaiEk98Q" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_PuTM7RxoEeqvlJwaiEk98Q">
-    <bindings xmi:id="_1kg6sCTlEeqULpgCfhjqNQ" keySequence="M1+W" command="_PvjKFBxoEeqvlJwaiEk98Q"/>
+    <bindings xmi:id="_uxy_IDIqEeqqbtyPbL52Uw" keySequence="M1+W" command="_PvjKFBxoEeqvlJwaiEk98Q"/>
   </bindingTables>
   <bindingTables xmi:id="_QLjJkRxoEeqvlJwaiEk98Q" elementId="org.eclipse.ant.ui.actionSet.presentation" bindingContext="_QLjJkBxoEeqvlJwaiEk98Q"/>
   <bindingTables xmi:id="_QLjJkxxoEeqvlJwaiEk98Q" elementId="org.eclipse.debug.ui.breakpointActionSet" bindingContext="_QLjJkhxoEeqvlJwaiEk98Q"/>
@@ -2185,26 +2109,32 @@
     <tags>View</tags>
     <tags>categoryTag:Other</tags>
   </descriptors>
-  <descriptors xmi:id="_QEjJsxxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.livechat.ui.views.LiveChatView" label="Live Chat" iconURI="platform:/plugin/com.genuitec.eclipse.code.livechat.ui/icons/chat.png" tooltip="" category="CodeMix" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_6JXxsDE1EeqhLvteX3vsAg" elementId="com.genuitec.eclipse.code.livechat.ui.views.LiveChatView" label="Live Chat" iconURI="platform:/plugin/com.genuitec.eclipse.code.livechat.ui/icons/chat.png" tooltip="" category="CodeMix" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="com.genuitec.eclipse.code.livechat.ui.views.LiveChatView"/>
     <persistedState key="originalCompatibilityViewBundle" value="com.genuitec.eclipse.code.livechat.ui"/>
     <tags>View</tags>
     <tags>inject</tags>
     <tags>categoryTag:CodeMix</tags>
   </descriptors>
-  <descriptors xmi:id="_QEjwwBxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.ui.terminal.plus" label="Terminal+" iconURI="platform:/plugin/com.genuitec.eclipse.code.ui.terminal.plus/icons/terminal-view16.png" tooltip="" category="Terminal+" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_6JY_0DE1EeqhLvteX3vsAg" elementId="com.genuitec.eclipse.tools.MinimapView" label="Minimap" iconURI="platform:/plugin/com.genuitec.eclipse.code.minimap/icons/minimap.gif" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.genuitec.eclipse.code.minimap.view.MinimapView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.genuitec.eclipse.code.minimap"/>
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_6JZm4DE1EeqhLvteX3vsAg" elementId="com.genuitec.eclipse.code.ui.terminal.plus" label="Terminal+" iconURI="platform:/plugin/com.genuitec.eclipse.code.ui.terminal.plus/icons/terminal-view16.png" tooltip="" category="Terminal+" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="com.genuitec.eclipse.code.ui.terminal.plus.view.TerminalsView"/>
     <persistedState key="originalCompatibilityViewBundle" value="com.genuitec.eclipse.code.ui.terminal.plus"/>
     <tags>View</tags>
     <tags>categoryTag:Terminal+</tags>
   </descriptors>
-  <descriptors xmi:id="_QEjwwRxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.code.ui.welcome.view" label="CodeMix" iconURI="platform:/plugin/com.genuitec.eclipse.code.ui.welcome/images/CodeMix-icon-16px.png" tooltip="" category="CodeMix" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_6JaN8DE1EeqhLvteX3vsAg" elementId="com.genuitec.eclipse.code.ui.welcome.view" label="CodeMix" iconURI="platform:/plugin/com.genuitec.eclipse.code.ui.welcome/images/CodeMix-icon-16px.png" tooltip="" category="CodeMix" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="com.genuitec.eclipse.code.ui.welcome.view.CodeMixWelcomeView"/>
     <persistedState key="originalCompatibilityViewBundle" value="com.genuitec.eclipse.code.ui.welcome"/>
     <tags>View</tags>
     <tags>categoryTag:CodeMix</tags>
   </descriptors>
-  <descriptors xmi:id="_QEkX0BxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.tutorial.view" label="Tutorial" iconURI="platform:/plugin/com.genuitec.eclipse.tutorial.ui/icons/viewIcon.png" tooltip="" allowMultiple="true" category="CodeMix" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_6Ja1ADE1EeqhLvteX3vsAg" elementId="com.genuitec.eclipse.tutorial.view" label="Tutorial" iconURI="platform:/plugin/com.genuitec.eclipse.tutorial.ui/icons/viewIcon.png" tooltip="" allowMultiple="true" category="CodeMix" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="com.genuitec.eclipse.tutorial.ui.TutorialView"/>
     <persistedState key="originalCompatibilityViewBundle" value="com.genuitec.eclipse.tutorial.ui"/>
     <tags>View</tags>
@@ -3447,6 +3377,12 @@
   <commands xmi:id="_QD_JABxoEeqvlJwaiEk98Q" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.functions" commandName="Show function variables" description="Show or hide function variables" category="_Pulg0hxoEeqvlJwaiEk98Q"/>
   <commands xmi:id="_QD_JARxoEeqvlJwaiEk98Q" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.this" commandName="Show 'this' variable" description="Show or hide the this variable" category="_Pulg0hxoEeqvlJwaiEk98Q"/>
   <commands xmi:id="_QD_JAhxoEeqvlJwaiEk98Q" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.prototypes" commandName="Show proto variables" description="Show or hide proto variables" category="_Pulg0hxoEeqvlJwaiEk98Q"/>
+  <commands xmi:id="_qzmGEDErEeq0FO89ZmNlag" elementId="org.eclipse.tm4e.languageconfiguration.removeblockcommentcommand" commandName="Remove Block Comment" category="_qzlfATErEeq0FO89ZmNlag"/>
+  <commands xmi:id="_qzmGETErEeq0FO89ZmNlag" elementId="org.eclipse.tm4e.languageconfiguration.addblockcommentcommand" commandName="Add Block Comment" category="_qzlfATErEeq0FO89ZmNlag"/>
+  <commands xmi:id="_qzmGEjErEeq0FO89ZmNlag" elementId="org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand" commandName="Toggle Line Comment" category="_qzlfATErEeq0FO89ZmNlag"/>
+  <commands xmi:id="_q94DcDErEeq0FO89ZmNlag" elementId="AUTOGEN:::org.eclipse.lsp4e.debug.textEditor.rulerActions/org.eclipse.lsp4e.debug.textEditor.doubleClickBreakpointAction" commandName="unusedlabel" category="_Pulg0hxoEeqvlJwaiEk98Q"/>
+  <commands xmi:id="_q94qgDErEeq0FO89ZmNlag" elementId="AUTOGEN:::org.eclipse.lsp4e.debug.genericEditor.rulerActions/org.eclipse.lsp4e.debug.genericEditor.doubleClickBreakpointAction" commandName="unusedlabel" category="_Pulg0hxoEeqvlJwaiEk98Q"/>
+  <commands xmi:id="_55F6ADE1EeqhLvteX3vsAg" elementId="com.genuitec.eclipse.slack.share" commandName="Share to Slack..." description="Share selected text to Slack" category="_55FS8TE1EeqhLvteX3vsAg"/>
   <addons xmi:id="_PuTM7hxoEeqvlJwaiEk98Q" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_PuTM7xxoEeqvlJwaiEk98Q" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_PuTM8BxoEeqvlJwaiEk98Q" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -3458,7 +3394,7 @@
   <addons xmi:id="_PuTM9hxoEeqvlJwaiEk98Q" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_PuTM9xxoEeqvlJwaiEk98Q" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_PuW3QBxoEeqvlJwaiEk98Q" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_uxljwTIqEeqqbtyPbL52Uw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_Pvh78BxoEeqvlJwaiEk98Q" elementId="org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler"/>
   <categories xmi:id="_Puk5sBxoEeqvlJwaiEk98Q" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
@@ -3504,4 +3440,6 @@
   <categories xmi:id="_Pulg0hxoEeqvlJwaiEk98Q" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
   <categories xmi:id="_Pulg0xxoEeqvlJwaiEk98Q" elementId="org.eclipse.wst.jsdt.ui.category.refactoring" name="Refactor - JavaScript" description="JavaScript Refactoring Actions"/>
   <categories xmi:id="_Pulg1BxoEeqvlJwaiEk98Q" elementId="com.genuitec.eclipse.inlinesearch.commands.category" name="Inline Search"/>
+  <categories xmi:id="_qzlfATErEeq0FO89ZmNlag" elementId="org.eclipse.tm4e.languageconfiguration.category" name="TM4E Language Configuration"/>
+  <categories xmi:id="_55FS8TE1EeqhLvteX3vsAg" elementId="com.genuitec.eclipse.code.sharing.category" name="Code Sharing" description="Share code snippets"/>
 </application:Application>

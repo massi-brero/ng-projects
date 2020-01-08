@@ -1,5 +1,6 @@
 codemix.newfile.notification.ts=false
 codemix.settings.migration=true
+control.panel.seen=true
 deletedObsoleteMarkers=true
 displaySyntaxColorInfo=false
 eclipse.preferences.version=1
