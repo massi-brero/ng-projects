@@ -1,6 +1,7 @@
 {
   "extends": "../tsconfig.app.json",
   "compilerOptions": {
+    "skipLibCheck": true,
     "types": [
       "node"
     ]
@@ -16,5 +17,6 @@
   ],
   "files": [
     "./typings.d.ts"
-  ]
+  ],
+  "skpLibCheck": true
 }

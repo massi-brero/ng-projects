@@ -12,7 +12,7 @@ module.exports = {
   coverageDirectory: 'coverage/testapp',
   collectCoverageFrom: ['src/**/*.{js,jsx}'],
   moduleNameMapper: {
-    'jest-preset-angular/(.*)': '<rootDir>/../node_modules/jest-preset-angular/build/$1'
+    'jest-preset-angular/(.*)': '<rootDir>/node_modules/jest-preset-angular/build/$1'
   },
   transformIgnorePatterns: [
     'node_modules/(?!@ngrx|angular2-ui-switch|ng-dynamic)',
