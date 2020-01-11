@@ -9,8 +9,7 @@ module.exports = function (api) {
       }
     }
   ],
-    "@babel/preset-typescript",
-    "angular"];
+    "@babel/preset-typescript"];
   let plugins = [
     ["@babel/plugin-proposal-decorators", {"legacy": true}]
   ];

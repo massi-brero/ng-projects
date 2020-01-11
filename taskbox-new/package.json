@@ -25,6 +25,7 @@
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-typescript": "^7.7.7",
     "babel-plugin-require-context-hook": "^1.0.0",
+    "babel-preset-angular": "^6.0.15",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
