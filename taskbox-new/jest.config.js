@@ -1,22 +1,26 @@
-const { compilerOptions } = require('./tsconfig');
+const {compilerOptions} = require('./tsconfig');
 
 module.exports = {
   preset: 'jest-preset-angular',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   roots: ['<rootDir>/src/'],
-  testMatch: ['**/+(*.)+(spec).+(ts)'],
+  testMatch: ['**/+(*.)+(spec).+(ts)', '**/+(*.)+(test).+(ts|js)'],
+  setupFiles: ['<rootDir>/.jest/register-context.js'],
   setupFilesAfterEnv: ['<rootDir>/src/test.ts'],
-  collectCoverage: true,
+  collectCoverage: false,
   coverageReporters: ['html'],
-  coverageDirectory: 'coverage/my-app',
+  coverageDirectory: 'coverage/testapp',
+  collectCoverageFrom: ['src/**/*.{js,jsx}'],
   moduleNameMapper: {
-    'jest-preset-angular/(.*)':'<rootDir>/../node_modules/jest-preset-angular/build/$1'
+    'jest-preset-angular/(.*)': '<rootDir>/../node_modules/jest-preset-angular/build/$1'
   },
   transformIgnorePatterns: [
-    'node_modules/(?!@ngrx|angular2-ui-switch|ng-dynamic)'
-],
-transform: {
-  '^.+\\.(ts|html)$': 'ts-jest',
-    '^.+\\.js$': 'babel-jest'
-  }
+    'node_modules/(?!@ngrx|angular2-ui-switch|ng-dynamic)',
+  ],
+  transform: {
+    '^.+\\.(ts|js|html)$': 'ts-jest',
+    // '^.+\\.js$': 'babel-jest',
+    '^.+\\.jsx?$': 'babel-jest',
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', '.html'],
 };
