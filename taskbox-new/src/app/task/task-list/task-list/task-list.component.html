@@ -1,0 +1,9 @@
+<div class="list-items">
+  <task-item
+    *ngFor="let task of tasksInOrder"
+    [task]="task"
+    (onArchiveTask)="onArchiveTask.emit($event)"
+    (onPinTask)="onPinTask.emit($event)"
+  >
+  </task-item>
+</div>

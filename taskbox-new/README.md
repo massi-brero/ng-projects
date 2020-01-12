@@ -25,3 +25,7 @@ Bei Fehler (und es werden welche auftreten), helfen diese beiden Links weiter.
 https://www.npmjs.com/package/@storybook/addon-storyshots
 https://github.com/thymikee/jest-preset-angular/blob/master/README.md
 https://github.com/thymikee/jest-preset-angular/issues/256
+
+##Tutorials
+https://storybook.js.org/docs/guides/guide-angular/
+

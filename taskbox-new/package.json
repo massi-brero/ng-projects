@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "jest",
+    "test:updateSnapshots": "jest --updateSnapshot",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "storybook": "start-storybook --config-dir .storybook --port 6006 --static-dir .",
