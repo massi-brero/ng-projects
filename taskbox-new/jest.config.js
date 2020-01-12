@@ -18,8 +18,8 @@ module.exports = {
     'node_modules/(?!@ngrx|angular2-ui-switch|ng-dynamic)',
   ],
   transform: {
-    '^.+\\.(ts|js|html)$': 'ts-jest',
-    // '^.+\\.js$': 'babel-jest',
+    '^.+\\.(ts|html)$': 'ts-jest',
+    '^.+\\.js$': 'babel-jest',
     '^.+\\.jsx?$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', '.html'],
