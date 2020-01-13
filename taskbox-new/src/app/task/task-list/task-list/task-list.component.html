@@ -1,9 +1,9 @@
 <div class="list-items">
-  <task-item
-    *ngFor="let task of tasksInOrder"
+  <app-task-item
+    *ngFor="let task of tasks"
     [task]="task"
     (onArchiveTask)="onArchiveTask.emit($event)"
     (onPinTask)="onPinTask.emit($event)"
   >
-  </task-item>
+  </app-task-item>
 </div>

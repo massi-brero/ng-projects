@@ -49,7 +49,7 @@ storiesOf('TaskList', module)
           <app-task-list [tasks]="tasks" (onPinTask)="onPinTask($event)" (onArchiveTask)="onArchiveTask($event)"></app-task-list>
         </div>
       `,
-      ...props,
+      props,
       tasks: withPinnedTasks
     };
   })
@@ -61,6 +61,7 @@ storiesOf('TaskList', module)
         </div>
       `,
       props,
+      tasks: []
     };
   })
   .add('empty', () => {
@@ -71,6 +72,7 @@ storiesOf('TaskList', module)
         </div>
       `,
       props,
+      tasks: []
     };
   })
 ;
