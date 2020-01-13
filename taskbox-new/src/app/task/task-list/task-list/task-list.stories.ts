@@ -16,7 +16,7 @@ export const defaultTasks = [
 
 export const withPinnedTasks = [
   ...defaultTasks.slice(0, 5),
-  {is: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED'},
+  {id: '6', title: 'task 6 (pinned)', state: 'TASK_PINNED'},
 ];
 
 const props = {
@@ -49,19 +49,21 @@ storiesOf('TaskList', module)
           <app-task-list [tasks]="tasks" (onPinTask)="onPinTask($event)" (onArchiveTask)="onArchiveTask($event)"></app-task-list>
         </div>
       `,
-      props,
-      tasks: withPinnedTasks
+      props: {
+        ...props,
+        tasks: withPinnedTasks,
+      },
     };
   })
   .add('loading', () => {
     return {
       template: `
          <div style="padding: 3rem">
-          <app-task-list [tasks]="[]" loading="true" (onPinTask)="onPinTask($event)" (onArchiveTask)="onArchiveTask($event)"></app-task-list>
+          <app-task-list [tasks]="[]" loading="true" (onPinTask)="onPinTask($event)" (onArchiveTask)="onArchiveTask($event)">
+          </app-task-list>
         </div>
       `,
       props,
-      tasks: []
     };
   })
   .add('empty', () => {
@@ -72,7 +74,6 @@ storiesOf('TaskList', module)
         </div>
       `,
       props,
-      tasks: []
     };
   })
 ;

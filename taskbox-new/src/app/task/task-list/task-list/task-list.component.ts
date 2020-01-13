@@ -7,7 +7,7 @@ import {Task} from '../../../shared/task.interface';
   styleUrls: ['./task-list.component.less']
 })
 export class TaskListComponent implements OnInit {
-  @Input() tasks: Task[];
+  @Input() tasksInOrder: Task[] = [];
   @Input() loading = false;
   // tslint:disable-next-line:no-output-on-prefix
   @Output() onPinTask: EventEmitter<any> = new EventEmitter();
@@ -15,6 +15,14 @@ export class TaskListComponent implements OnInit {
   @Output() onArchiveTask: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
+
+  @Input()
+  set tasks(arr: Task[]) {
+    this.tasksInOrder = [
+      ...arr.filter(t => t.state === 'TASK_PINNED'),
+      ...arr.filter(t => t.state !== 'TASK_PINNED')
+    ];
+  }
 
   ngOnInit() {
   }
