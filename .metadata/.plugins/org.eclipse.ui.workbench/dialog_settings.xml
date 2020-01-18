@@ -19,21 +19,28 @@
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="-676"/>
-		<item key="DIALOG_Y_ORIGIN" value="-877"/>
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="com.genuitec.eclipse.code.file.typescript"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="com.genuitec.eclipse.code.angular.ui.newservice"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
 			<item value="angular.cli"/>
-			<item value="com.genuitec.eclipse.code.ui.codemix.category"/>
-			<item value="com.genuitec.eclipse.code.ui.codemix.category/com.genuitec.eclipse.code.ui.codemix.examples.category"/>
-			<item value="typescriptCategoryWizard"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 		<item key="actionSetFilter" value="true"/>
 		<item key="internalFilter" value="true"/>
 		<item key="uncategorizedFilter" value="true"/>
+	</section>
+	<section name="FileSystemImportWizard">
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="-139"/>
+		<item key="DIALOG_Y_ORIGIN" value="-306"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="644"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>

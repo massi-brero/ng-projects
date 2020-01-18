@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="installedFeatures">
-		<item value="com.genuitec.eclipse.code.angularide.feature:3.6.0.201912111708"/>
+		<item value="com.genuitec.eclipse.code.angular.feature:3.6.0.201912111708"/>
+		<item value="com.genuitec.eclipse.code.extended.feature:3.6.0.201912111708"/>
 		<item value="com.genuitec.eclipse.code.feature:3.6.0.201912111708"/>
+		<item value="com.genuitec.eclipse.code.livepreview.feature:3.6.0.201912111708"/>
+		<item value="com.genuitec.eclipse.code.navigation.feature:3.6.0.201912111708"/>
+		<item value="com.genuitec.eclipse.code.slack.feature:3.6.0.201912111708"/>
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
 		<item value="org.eclipse.buildship:3.1.2.v20190903-1802"/>
 		<item value="org.eclipse.egit.gitflow.feature:5.5.0.201909110433-r"/>
@@ -40,10 +44,9 @@
 		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>
 		<item value="org.sonatype.m2e.egit.feature:0.15.1.201806191431"/>
 		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.4.201905300046"/>
-		<item value="pack.angular:3.6.0.201912111708"/>
 	</list>
 	<section name="com.genuitec.eclipse.code.angular.ui.project.ImportAngularProjectRootArea">
-		<item key="OUTSIDE_LOCATION" value="/Users/brero/code/ng-projects/assignments/binding-assignment-4-start"/>
+		<item key="OUTSIDE_LOCATION" value="/Users/brero/code/ng-projects/assignments/services-assignment-start"/>
 	</section>
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>

@@ -8,7 +8,9 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/assign-3" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.wst.jsdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576499727753_4" label="main-projects" name="main-projects">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/services-assignment-start" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/food-lists" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/server-services" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.wst.jsdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576584335551_5" label="test-projects" name="test-projects">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/assign-4" type="4"/>
@@ -16,6 +18,6 @@
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576104470283_2" label="Window Working Set" name="Aggregate for window 1576104470283"/>
 <mruList name="main-projects"/>
-<mruList name="test-projects"/>
 <mruList name="ng-assignments"/>
+<mruList name="test-projects"/>
 </workingSetManager>
