@@ -5,6 +5,6 @@
     },
     "extends": [
       "airbnb/hooks",
-      "plugin:prettier/recommended"
+      "prettier"
     ]
   }
