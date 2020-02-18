@@ -3,7 +3,12 @@ import {CommonModule} from '@angular/common';
 import {TaskComponent} from '../../task.component';
 import {TaskListComponent} from './task-list.component';
 import {task, actions} from '../../task.stories';
+import { withA11y } from '@storybook/addon-a11y';
 
+export default {
+  title: 'TaskList',
+  decorators: [withA11y],
+};
 
 export const defaultTasks = [
   {...task, id: '1', title: 'task 1'},
@@ -32,6 +37,7 @@ storiesOf('TaskList', module)
       imports: [CommonModule]
     })
   )
+  .addDecorator(withA11y)
   .add('default', () => {
     return {
       template: `
