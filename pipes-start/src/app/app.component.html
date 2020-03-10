@@ -4,18 +4,26 @@
       <input type="text" [(ngModel)]="filteredState" />
       <hr />
       <br />
-      <button class="btn btn-primary">Add server</button>
+      <button class="btn btn-primary" (click)="onAddServer()">
+        Add server
+      </button>
+      <br /><br />
+      <h2>{{ appState | async }}</h2>
       <ul class="list-group">
         <li
           class="list-group-item"
-          *ngFor="let server of servers | filter: filteredState:'status'"
+          *ngFor="
+            let server of servers
+              | filter: filteredState:'status'
+              | sort: 'name'
+          "
           [ngClass]="getStatusClasses(server)"
         >
           <span class="badge">
             {{ server.status }}
           </span>
           <strong>{{ server.name | shorten: 10 }}</strong> |
-          {{ server.instanceType | uppercase }} |
+          {{ server.instanceType | uppercase | reverse }} |
           {{ server.started | date: "fullDate" | uppercase }}
         </li>
       </ul>
