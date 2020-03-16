@@ -1,0 +1,50 @@
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { Post } from '../models/Post';
+import { map, mergeMap, catchError } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+
+@Injectable({ providedIn: 'root' })
+export class PostService {
+  endpoint = 'https://ng-http-90b6e.firebaseio.com/posts.json';
+
+  constructor(private http: HttpClient) {}
+
+  save(title: string, content: string): Observable<any> {
+    const post: Post = { title: title, content: content };
+    return this.http
+      .post<{ name: string }>(this.endpoint, post, { observe: 'response' })
+      .pipe(mergeMap(() => this.fetch()));
+  }
+
+  fetch() {
+    let searchParams = new HttpParams();
+    searchParams = searchParams.append('print', 'pretty');
+    searchParams = searchParams.append('foo', 'bar');
+    return this.http
+      .get<{ [key: string]: Post }>(this.endpoint, {
+        headers: new HttpHeaders({
+          'Custom-Header': 'foo'
+        }),
+        params: searchParams
+      })
+      .pipe(
+        map(data => {
+          const posts = [];
+          for (const key in data) {
+            if (data.hasOwnProperty(key)) {
+              posts.push({ ...data[key], id: key });
+            }
+          }
+          return posts;
+        }),
+        catchError(errorrRes => {
+          return throwError(errorrRes);
+        })
+      );
+  }
+
+  delete() {
+    return this.http.delete(this.endpoint);
+  }
+}
