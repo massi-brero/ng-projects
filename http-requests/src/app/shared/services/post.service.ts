@@ -1,7 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import {
+  HttpClient,
+  HttpHeaders,
+  HttpParams,
+  HttpEventType
+} from '@angular/common/http';
 import { Post } from '../models/Post';
-import { map, mergeMap, catchError } from 'rxjs/operators';
+import { map, mergeMap, catchError, tap } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
@@ -12,8 +17,14 @@ export class PostService {
 
   save(title: string, content: string): Observable<any> {
     const post: Post = { title: title, content: content };
+    const httpOptions: { headers; observe } = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      }),
+      observe: 'events'
+    };
     return this.http
-      .post<{ name: string }>(this.endpoint, post, { observe: 'response' })
+      .post<{ name: string }>(this.endpoint, post, httpOptions)
       .pipe(mergeMap(() => this.fetch()));
   }
 
@@ -45,6 +56,15 @@ export class PostService {
   }
 
   delete() {
-    return this.http.delete(this.endpoint);
+    return this.http
+      .delete(this.endpoint, {
+        observe: 'body',
+        responseType: 'json'
+      })
+      .pipe(
+        tap(data => {
+          console.log(data);
+        })
+      );
   }
 }

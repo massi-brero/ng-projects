@@ -24,10 +24,7 @@ export class AppComponent implements OnInit {
 
   onCreatePost(postData: { title: string; content: string }) {
     this.postService.save(postData.title, postData.content).subscribe(data => {
-      console.log(data);
-
-      /*       this.loadedPosts = data;
-      console.log(this.loadedPosts); */
+      this.loadedPosts = data;
     });
   }
 
@@ -38,7 +35,6 @@ export class AppComponent implements OnInit {
   onClearPosts() {
     this.postService.delete().subscribe(
       response => {
-        console.log(response);
         this.loadedPosts = [];
       },
       err => {
