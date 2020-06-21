@@ -11,6 +11,6 @@ export class User {
             return null;
         }
 
-        return this.token;
+        return this.$token;
     }
 }

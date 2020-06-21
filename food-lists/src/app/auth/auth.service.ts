@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
-import { Subject, throwError } from 'rxjs';
+import { BehaviorSubject, throwError } from 'rxjs';
 import { User } from './user';
 
 export interface AuthResponseData {
@@ -20,7 +20,7 @@ export class AuthService {
     readonly apiKey = 'AIzaSyA5Rm-WxNGaNsy1ERV2U66DxFEx5gx1nkU';
     readonly signupUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${this.apiKey}`;
     readonly loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${this.apiKey}`;
-    user = new Subject<User>();
+    user = new BehaviorSubject<User>(null);
 
     constructor(private http: HttpClient) {}
 
@@ -33,9 +33,7 @@ export class AuthService {
                 returnSecureToken: true,
             })
             .pipe(
-                catchError((errorRes) => {
-                    return this.handleError(errorRes);
-                }),
+                catchError(this.handleError),
                 tap((resData) => {
                     this.handleAuthentication(
                         resData.email,
@@ -55,9 +53,7 @@ export class AuthService {
                 returnSecureToken: true,
             })
             .pipe(
-                catchError((errorRes) => {
-                    return this.handleError(errorRes);
-                }),
+                catchError(this.handleError),
                 tap((resData) => {
                     this.handleAuthentication(
                         resData.email,
