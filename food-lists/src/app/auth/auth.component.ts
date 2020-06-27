@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthResponseData, AuthService } from './auth.service';
 import { Observable } from 'rxjs';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-auth',
@@ -38,12 +38,10 @@ export class AuthComponent {
 
         authObs.subscribe(
             (res) => {
-                console.log(res);
                 this.isLoading = false;
                 this.router.navigate(['/recipes']);
             },
             (error) => {
-                console.log(error);
                 this.error = error;
                 this.isLoading = false;
             }
