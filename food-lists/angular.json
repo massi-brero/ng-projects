@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "food-lists"
+  "defaultProject": "food-lists",
+  "cli": {
+    "analytics": "3f60cd58-7983-492a-a73e-b98f3f471925"
+  }
 }
