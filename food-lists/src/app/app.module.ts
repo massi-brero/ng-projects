@@ -15,7 +15,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
-import { RecipesModule } from './recipes.module';
+import { RecipesModule } from './recipes/recipes.module';
 
 @NgModule({
     declarations: [
