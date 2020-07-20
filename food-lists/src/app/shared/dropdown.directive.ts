@@ -1,20 +1,27 @@
-import {Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2} from '@angular/core';
+import {
+    Directive,
+    ElementRef,
+    HostBinding,
+    HostListener,
+    OnInit,
+    Renderer2,
+} from '@angular/core';
 
 @Directive({
-  selector: '[appDropdown]'
+    selector: '[appDropdown]',
 })
 export class DropdownDirective implements OnInit {
-  @HostBinding('class.open') isOpen: boolean;
+    @HostBinding('class.open') isOpen: boolean;
 
-  constructor(private element: ElementRef, private renderer: Renderer2) {
-  }
+    constructor(private element: ElementRef, private renderer: Renderer2) {}
 
-  ngOnInit(): void {
-    this.isOpen = false
-  }
+    ngOnInit(): void {
+        this.isOpen = false;
+    }
 
-  @HostListener('click') toggleOpen(event: Event) {
-    this.isOpen = !this.isOpen;
-  }
+    @HostListener('click') toggleOpen(event: Event) {
+        console.log('huhu');
 
+        this.isOpen = !this.isOpen;
+    }
 }

@@ -1,13 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RecipesComponent } from './recipes.component';
-import { RecipesListComponent } from './recipes-list/recipes-list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 import { RecipesDetailsComponent } from './recipes-details/recipes-details.component';
 import { RecipesItemComponent } from './recipes-list/recipes-item/recipes-item.component';
+import { RecipesListComponent } from './recipes-list/recipes-list.component';
+import { RecipesRoutingModule } from './recipes-routing';
 import { RecipesStartComponent } from './recipes-start/recipes-start.component';
-import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
-import { AppRoutingModule } from '../app-routing/app-routing.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { RecipesComponent } from './recipes.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,13 @@ import { CommonModule } from '@angular/common';
         RecipesStartComponent,
         RecipeEditComponent,
     ],
-    imports: [CommonModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+    imports: [
+        CommonModule,
+        RouterModule,
+        FormsModule,
+        ReactiveFormsModule,
+        RecipesRoutingModule,
+    ],
     exports: [
         RecipesComponent,
         RecipesListComponent,
