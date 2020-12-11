@@ -13,16 +13,13 @@ import { AlertComponent } from './shared/alert/alert.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { PlaceholderDirective } from './shared/placeholder/placeholder.directive';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
-import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
-        ShoppingListComponent,
-        ShoppingListEditComponent,
         DropdownDirective,
         AuthComponent,
         SpinnerComponent,
@@ -36,6 +33,7 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
         HttpClientModule,
         AppRoutingModule,
         RecipesModule,
+        ShoppingListModule,
     ],
     providers: [
         ShoppingListService,
