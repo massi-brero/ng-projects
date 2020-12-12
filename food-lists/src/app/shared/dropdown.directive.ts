@@ -20,8 +20,6 @@ export class DropdownDirective implements OnInit {
     }
 
     @HostListener('click') toggleOpen(event: Event) {
-        console.log('huhu');
-
         this.isOpen = !this.isOpen;
     }
 }
