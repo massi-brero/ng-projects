@@ -1,0 +1,4 @@
+<!--<input type="text" name="" id="" [(ngModel)]="name">-->
+<input type="text" name="" id="" (input)="onUserInput($event)" [value]="name">
+<p>Hallo {{name}}!</p>
+<app-user-detail>s</app-user-detail>

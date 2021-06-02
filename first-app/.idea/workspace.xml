@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02a8b31c-012f-40a7-b1eb-a94dad6d53ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../food-lists/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../food-lists/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../food-lists/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../food-lists/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.jest/register-context.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.storybook/addons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.storybook/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.storybook/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.storybook/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.storybook/typings.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/.storybook/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/app.component.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/shared/task.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/styles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/__snapshots__/task.stories.storyshot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task-list/task-list/__snapshots__/task-list.stories.storyshot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task-list/task-list/task-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task-list/task-list/task-list.component.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task-list/task-list/task-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task-list/task-list/task-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task-list/task-list/task-list.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/app/task/task.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/font/OpenSans-Light-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/font/OpenSans-Light-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/font/OpenSans-Light-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/font/OpenSans-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/font/OpenSans-Regular-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/font/OpenSans-Regular-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/font/OpenSans-Regular-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/font/OpenSans-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/icon/percolate.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/icon/percolate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/icon/percolate.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/icon/percolate.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/icon/todos.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/icon/todos.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/icon/todos.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/assets/icon/todos.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/snapshots.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/stories/0-Welcome.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/stories/1-Button.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/styles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storybook-prototype Kopie/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1syXZYoaJLxG1GDjktet8HDDWVu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02a8b31c-012f-40a7-b1eb-a94dad6d53ce" name="Default Changelist" comment="" />
+      <created>1621845858952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621845858952</updated>
+      <workItem from="1621845860211" duration="832000" />
+      <workItem from="1621855196156" duration="96000" />
+      <workItem from="1621855320681" duration="352000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
