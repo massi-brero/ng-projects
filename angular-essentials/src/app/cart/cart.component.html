@@ -1,10 +1,19 @@
 <input [(ngModel)]="newItem">
-<button (click)="onAddItem()">Add item</button>
+<button (click)="onAddItem()"
+        class="btn"
+        [ngClass]="{'btn-primary': newItem !== '', 'btn-outline-danger': newItem === '' || newItem === null}"
+>
+  Add item
+</button>
+<p *ngIf="newItem === ''">Please enter a value.</p>
 
 <hr>
 
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let item of items">
+  <li class="list-group-item"
+      *ngFor="let item of items; let i = index"
+      [ngStyle]="{'background-color': i % 2 === 0 ? 'yellow' : 'blue'}"
+  >
     {{item}}
   </li>
 </ul>
