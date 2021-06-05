@@ -1,0 +1,27 @@
+<div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link"
+         [ngClass]="{'active': chosenList === 'all'}"
+         aria-current="page"
+         (click)="onChoose('all')">
+        All
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+         [ngClass]="{'active': chosenList === 'light'}"
+         (click)="onChoose('light')">
+        Light
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+         [ngClass]="{'active': chosenList === 'dark'}"
+         (click)="onChoose('dark')">
+        Dark
+      </a>
+    </li>
+  </ul>
+  <app-list [characters]="getCharacters()" (sideAssigned)="onSideAssigned($event)"></app-list>
+</div>
