@@ -8,15 +8,9 @@ import {Character} from "../models/Character";
 })
 export class ListComponent implements OnInit {
   @Input() characters: Character[] = [];
-  @Output() sideAssigned = new EventEmitter<Character>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  onSideAssigned(changedCharacter: Character) {
-    this.sideAssigned.emit(changedCharacter);
-  }
-
 }
