@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Form, NgForm } from '@angular/forms';
+import { StarWarsService } from '../star-wars.service';
 
 @Component({
   selector: 'app-create-character',
@@ -22,13 +23,16 @@ export class CreateCharacterComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private swService: StarWarsService) { }
 
   ngOnInit(): void {
   }
 
   onSubmit(form: NgForm) {
     console.log(form.value);
+    if (!form.invalid) {
+      this.swService.addCharacter(form.value.name, form.value.side);
+    }
   }
 
 }

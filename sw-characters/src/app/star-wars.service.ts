@@ -34,6 +34,11 @@ export class StarWarsService {
     }
 
     addCharacter(name: string, side: string) {
-         this.characters.push({name, side});
+        const pos = this.characters.findIndex((character: Character) => {
+            return character.name === name;
+        });
+        if (pos === -1) {
+            this.characters.push({ name, side });
+        }
     }
 }
