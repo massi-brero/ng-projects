@@ -10,6 +10,7 @@ import { StarWarsService } from '../star-wars.service';
 })
 export class ListComponent implements OnInit {
   characters: Character[] = [];
+  private loadedSide: string= 'all';
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -18,7 +19,15 @@ export class ListComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
-      this.characters = this.starWarsService.getCharacters(params.side)
+      this.reloadCharacters(params.side);
+      this.loadedSide = params.side;
     });
+    this.starWarsService.charactersChanged.subscribe(() => {
+      this.reloadCharacters(this.loadedSide);
+    });
+  }
+
+  private reloadCharacters(side: string) {
+    this.characters = this.starWarsService.getCharacters(side);
   }
 }
