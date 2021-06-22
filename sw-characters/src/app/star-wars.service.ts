@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { HttpClient } from '@angular/common/http';
 import { Subject } from "rxjs";
 import { LogService } from "./log.service";
 import { Character } from "./models/Character";
@@ -13,7 +14,9 @@ export class StarWarsService {
     ];
     charactersChanged = new Subject<void>();
 
-    constructor(private logger: LogService) { }
+    constructor(
+        private logger: LogService,
+        private http: HttpClient) { }
 
     getCharacters(chosenList: string) {
         if (chosenList === 'all') {
@@ -23,6 +26,10 @@ export class StarWarsService {
                 return character.side === chosenList;
             });
         }
+    }
+
+    fetchCharacters() {
+
     }
 
     onSideAssigned(changedCharacter: Character) {

@@ -12,6 +12,7 @@ import { CreateCharacterComponent } from './create-character/create-character.co
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
@@ -51,7 +52,8 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [StarWarsService, LogService],
   bootstrap: [AppComponent]
