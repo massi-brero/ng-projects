@@ -21,7 +21,6 @@ export class TimerComponent implements OnInit, OnDestroy {
         this.timer.restartCountdown(this.init);
         this.countdownEndsSubscription = this.timer.countdownEnds$.subscribe(() => {
             console.log('-- countdown ends --');
-            this.onComplete.emit();
         });
     }
 
