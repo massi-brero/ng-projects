@@ -18,7 +18,7 @@ import {Subscription} from 'rxjs/Subscription';
     styleUrls: ['./timer-native.component.scss'],
     providers: [TimerNativeService],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.ShadowDom
 })
 export class TimerNativeComponent implements OnInit, OnDestroy {
     @Output() onComplete = new EventEmitter<void>();
