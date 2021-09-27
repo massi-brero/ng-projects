@@ -1,4 +1,8 @@
 div{
     display: flex;
     flex-wrap: wrap;
+
+    .tab li {
+        cursor: pointer;
+    }
 }

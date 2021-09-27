@@ -1,12 +1,15 @@
 <div>
-    <h1>Timers</h1>
-    <app-timer
-            *ngFor="let timer of timers"
-            init="{{timer}}"
-            (onComplete)="showEndTimerAlert()"
-    ></app-timer>
-
-    <button class="add" (click)="showAddTimer()">+</button>
+    <app-tabs>
+        <app-tab title="Timers">
+            <ng-container [ngTemplateOutlet]="timer"></ng-container>
+        </app-tab>
+        <app-tab title="Crono">
+            <ng-container [ngTemplateOutlet]="notAvailable"></ng-container>
+        </app-tab>
+        <app-tab title="Alarm">
+            <ng-template [ngTemplateOutlet]="notAvailable"></ng-template>
+        </app-tab>
+    </app-tabs>
 
     <app-alert-view
             [hidden]="!isEndTimerVisible"
@@ -32,3 +35,16 @@
         <button (click)="submitAddTimer()">Ok</button>
     </app-alert-view>
 </div>
+
+<ng-template #timer>
+    <app-timer
+            *ngFor="let timer of timers"
+            init="{{timer}}"
+            (onComplete)="showEndTimerAlert()"
+    ></app-timer>
+    <button class="add" (click)="showAddTimer()">+</button>
+</ng-template>
+
+<ng-template #notAvailable>
+    <p>Not Available</p>
+</ng-template>
