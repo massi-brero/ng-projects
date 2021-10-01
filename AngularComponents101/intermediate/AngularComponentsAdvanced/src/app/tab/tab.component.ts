@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {Tab} from './tab.interface';
 import {TabsComponent} from '../tabs/tabs.component';
 
@@ -9,19 +9,25 @@ import {TabsComponent} from '../tabs/tabs.component';
 })
 export class TabComponent implements OnInit, Tab {
 
+    @Output() onClick = new EventEmitter<void>();
     @Input() title: string;
     public isActive = false;
 
     /**
      *
-     * @param tabs parent element ... DI works because this component within parent's tags; see app.component.ts (??)
+     * @param tabs parent element
      *
      */
-    constructor(public tabs: TabsComponent) {
+    constructor(
+        // public tabs: TabsComponent
+    ) {
     }
 
     ngOnInit() {
-        this.tabs.addTab(this);
+        // this.tabs.addTab(this);
     }
 
+    clickTabContent() {
+        this.onClick.emit();
+    }
 }

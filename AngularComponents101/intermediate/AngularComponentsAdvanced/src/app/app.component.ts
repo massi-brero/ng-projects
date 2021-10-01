@@ -41,6 +41,7 @@ export class AppComponent {
     showEndTimerAlert() {
         this.isEndTimerVisible = true;
     }
+
     hideEndTimerAlert() {
         this.isEndTimerVisible = false;
     }
