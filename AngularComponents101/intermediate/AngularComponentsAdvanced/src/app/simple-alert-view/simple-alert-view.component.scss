@@ -1,6 +1,8 @@
 :host{
     position: fixed;
-    z-index: 100;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .background{
@@ -12,7 +14,7 @@
 
 .card{
     position: absolute;
-    z-index: 100;
+    z-index: 1000;
     background: white;
     width: 80%;
     padding: 20px;
