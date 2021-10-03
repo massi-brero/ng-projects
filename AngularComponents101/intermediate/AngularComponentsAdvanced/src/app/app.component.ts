@@ -1,4 +1,14 @@
-import {AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, ElementRef, QueryList, ViewChildren} from '@angular/core';
+import {
+    AfterContentInit,
+    AfterViewInit,
+    ChangeDetectorRef,
+    Component,
+    ElementRef,
+    QueryList,
+    Renderer2,
+    ViewChild,
+    ViewChildren
+} from '@angular/core';
 import {TimerService} from './timer/timer.service';
 import {SimpleAlertViewComponent} from './simple-alert-view/simple-alert-view.component';
 
@@ -15,15 +25,21 @@ export class AppComponent implements AfterContentInit, AfterViewInit {
     public time = 0;
     public timers: Array<number> = [];
     @ViewChildren(SimpleAlertViewComponent) alerts: QueryList<SimpleAlertViewComponent>;
+    @ViewChild("timerInput") timeInput: ElementRef;
 
     constructor(
         private timer: TimerService,
-        private cdRef: ChangeDetectorRef
+        private cdRef: ChangeDetectorRef,
+        private renderer: Renderer2
     ) {
         this.timers = [3, 20, 100];
     }
 
     ngAfterViewInit(): void {
+        this.renderer.setAttribute(this.timeInput.nativeElement, 'placeholder', 'enter seconds');
+        this.renderer.addClass(this.timeInput.nativeElement, 'time-in');
+        // this.timeInput.nativeElement.setAttribute('placeholder', 'enter seconds'); // th easy way with default renderer
+        //this.timeInput.nativeElement.classList.add('time-in');
         this.alerts.forEach(alert => {
             if (!alert.title) {
                 alert.title = "Huhuhu";
@@ -39,8 +55,6 @@ export class AppComponent implements AfterContentInit, AfterViewInit {
         // this.alert.message = "Hi na?";
     }
 
-
-
     logCountdownEnd() {
         console.log('app component: the countdown has finished');
         this.timer.restartCountdown();
@@ -48,6 +62,10 @@ export class AppComponent implements AfterContentInit, AfterViewInit {
 
     showAddTimer() {
         this.isAddTimerVisible = true;
+        setTimeout(() => {
+            // this.timeInput.nativeElement.focus(); // not platform safe
+            this.renderer.selectRootElement(this.timeInput.nativeElement).focus();
+        });
     }
 
     hideAddTimer() {

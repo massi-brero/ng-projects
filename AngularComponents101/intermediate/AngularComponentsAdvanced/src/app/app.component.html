@@ -11,16 +11,16 @@
         </app-tab>
     </app-tabs>
 
-<!--    <app-alert-view-->
-<!--            [hidden]="!isEndTimerVisible"-->
-<!--    >-->
-<!--        <h3 class="header">-->
-<!--            Timer ended!-->
-<!--        </h3>-->
-<!--        <div>Your countdown has finished</div>-->
-<!--        <button (click)="hideEndTimerAlert()" class="cancel-button">OK</button>-->
+    <!--    <app-alert-view-->
+    <!--            [hidden]="!isEndTimerVisible"-->
+    <!--    >-->
+    <!--        <h3 class="header">-->
+    <!--            Timer ended!-->
+    <!--        </h3>-->
+    <!--        <div>Your countdown has finished</div>-->
+    <!--        <button (click)="hideEndTimerAlert()" class="cancel-button">OK</button>-->
 
-<!--    </app-alert-view>-->
+    <!--    </app-alert-view>-->
 
     <app-alert-view
             [hidden]="!isAddTimerVisible"
@@ -30,17 +30,21 @@
             Add new timer!
         </h3>
         <label>Set the number of seconds for your timer</label>
-        <input [(ngModel)]="time" type="number">
+        <input [(ngModel)]="time" type="number" #timerInput>
         <button (click)="hideAddTimer()" class="cancel-button">Cancel</button>
         <button (click)="submitAddTimer()">Ok</button>
     </app-alert-view>
 </div>
 
-<app-simple-alert-view
-        title="Finished!"
-        message="Your countdown has finished"
-></app-simple-alert-view>
-<app-simple-alert-view></app-simple-alert-view>
+<ng-container [ngTemplateOutlet]="timerEndTemplate"></ng-container>
+
+
+<ng-template #timerEndTemplate>
+    <app-simple-alert-view
+            title="Finished!"
+            message="Your countdown has finished"
+    ></app-simple-alert-view>
+</ng-template>
 
 <ng-template #timer>
     <app-timer
