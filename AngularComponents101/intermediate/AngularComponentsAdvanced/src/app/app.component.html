@@ -36,13 +36,16 @@
     </app-alert-view>
 </div>
 
-<ng-container [ngTemplateOutlet]="timerEndTemplate"></ng-container>
+<ng-container
+        [ngTemplateOutlet]="timerEndTemplate"
+        [ngTemplateOutletContext]="{title: 'Game over', $implicit: 'Your countdown has finished'}"
+></ng-container>
 
 
-<ng-template #timerEndTemplate>
+<ng-template #timerEndTemplate let-message let-title="title">
     <app-simple-alert-view
-            title="Finished!"
-            message="Your countdown has finished"
+            [title]="title"
+            [message]="message"
     ></app-simple-alert-view>
 </ng-template>
 
