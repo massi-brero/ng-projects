@@ -33,6 +33,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
         FormsModule,
         HttpClientModule
     ],
+    entryComponents: [
+        SimpleAlertViewComponent
+    ],
     providers: [],
     bootstrap: [AppComponent]
 })

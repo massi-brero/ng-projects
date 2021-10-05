@@ -1,13 +1,12 @@
 import {
     AfterContentInit,
     AfterViewInit,
-    ChangeDetectorRef,
     Component,
+    ComponentFactoryResolver, ComponentRef,
     ElementRef,
-    QueryList,
     Renderer2,
     ViewChild,
-    ViewChildren
+    ViewContainerRef
 } from '@angular/core';
 import {TimerService} from './timer/timer.service';
 import {SimpleAlertViewComponent} from './simple-alert-view/simple-alert-view.component';
@@ -24,13 +23,15 @@ export class AppComponent implements AfterContentInit, AfterViewInit {
     // public isEndTimerVisible = false;
     public time = 0;
     public timers: Array<number> = [];
-    @ViewChildren(SimpleAlertViewComponent) alerts: QueryList<SimpleAlertViewComponent>;
+    public simpleAlert: ComponentRef<SimpleAlertViewComponent> = null;
+
     @ViewChild("timerInput") timeInput: ElementRef;
+    @ViewChild("alert", {read: ViewContainerRef, static: true}) alertContainer: ViewContainerRef;
 
     constructor(
         private timer: TimerService,
-        private cdRef: ChangeDetectorRef,
-        private renderer: Renderer2
+        private renderer: Renderer2,
+        private resolver: ComponentFactoryResolver
     ) {
         this.timers = [3, 20, 100];
     }
@@ -40,13 +41,6 @@ export class AppComponent implements AfterContentInit, AfterViewInit {
         this.renderer.addClass(this.timeInput.nativeElement, 'time-in');
         // this.timeInput.nativeElement.setAttribute('placeholder', 'enter seconds'); // th easy way with default renderer
         //this.timeInput.nativeElement.classList.add('time-in');
-        this.alerts.forEach(alert => {
-            if (!alert.title) {
-                alert.title = "Huhuhu";
-                alert.message = "Hi na?";
-            }
-            this.cdRef.detectChanges();
-        });
     }
 
     ngAfterContentInit() {
@@ -79,7 +73,15 @@ export class AppComponent implements AfterContentInit, AfterViewInit {
 
     showEndTimerAlert() {
         // this.isEndTimerVisible = true;
-        this.alerts.first.show();
+        const alertFactory = this.resolver.resolveComponentFactory(SimpleAlertViewComponent);
+        this.simpleAlert = this.alertContainer.createComponent(alertFactory);
+        this.simpleAlert.instance.title = 'Timer ended.'
+        this.simpleAlert.instance.message = 'Your countdown has finished.'
+        this.simpleAlert.instance.onDismiss.subscribe(() => {
+            this.simpleAlert.destroy();
+        })
+
+        this.simpleAlert.instance.show();
     }
 
     // hideEndTimerAlert() {

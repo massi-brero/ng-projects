@@ -34,20 +34,9 @@
         <button (click)="hideAddTimer()" class="cancel-button">Cancel</button>
         <button (click)="submitAddTimer()">Ok</button>
     </app-alert-view>
+
+    <ng-container #alert></ng-container>
 </div>
-
-<ng-container
-        [ngTemplateOutlet]="timerEndTemplate"
-        [ngTemplateOutletContext]="{title: 'Game over', $implicit: 'Your countdown has finished'}"
-></ng-container>
-
-
-<ng-template #timerEndTemplate let-message let-title="title">
-    <app-simple-alert-view
-            [title]="title"
-            [message]="message"
-    ></app-simple-alert-view>
-</ng-template>
 
 <ng-template #timer>
     <app-timer
