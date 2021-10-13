@@ -33,11 +33,25 @@
                #password="ngModel"
                name="password"
                placeholder="Password"
-               required>
-      </mat-form-field>
+               passwordStrength
+               minlength="8"
+               required
+        >
+        <mat-error *ngIf="password.touched && password.errors?.required">Password is mandatory.</mat-error>
 
+        <mat-error *ngIf="password.touched && password.errors?.passwordStrength">
+          Your password must have upper case, lower case and numeric characters.
+        </mat-error>
+
+        <mat-error *ngIf="password.touched && password.errors?.minlength">
+          Your email must have at least {{password.touched && password.errors.minlength.requiredLength}} characters.
+          You have only {{password.touched && password.errors.minlength.actualLength}} characters.
+        </mat-error>
+
+      </mat-form-field>
       <button mat-raised-button color="primary"
               type="submit"
+              class="loginButton"
               [disabled]="!loginForm.valid"
       >
         Logins
