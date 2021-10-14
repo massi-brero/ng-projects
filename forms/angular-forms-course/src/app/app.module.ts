@@ -63,7 +63,8 @@ import {LoginReactiveComponent} from './login-reactive/login-reactive.component'
     FileUploadComponent,
     LoginReactiveComponent,
     OnlyOneErrorPipe,
-    PasswordStrengthDirective
+    PasswordStrengthDirective,
+    OnlyOneErrorPipe
   ],
   imports: [
     BrowserModule,

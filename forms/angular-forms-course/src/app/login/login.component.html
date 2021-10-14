@@ -8,7 +8,7 @@
       <mat-form-field>
 
         <input matInput type="email"
-               [ngModel]="val.email"
+               ngModel
                #email="ngModel"
                name="email"
                placeholder="Email"
@@ -29,7 +29,7 @@
       <mat-form-field>
 
         <input matInput type="password"
-               [ngModel]="val.password"
+               ngModel
                #password="ngModel"
                name="password"
                placeholder="Password"
@@ -38,17 +38,21 @@
                required
         >
         <mat-error *ngIf="password.touched && password.errors?.required">Password is mandatory.</mat-error>
-
-        <mat-error *ngIf="password.touched && password.errors?.passwordStrength">
-          Your password must have upper case, lower case and numeric characters.
-        </mat-error>
-
-        <mat-error *ngIf="password.touched && password.errors?.minlength">
-          Your email must have at least {{password.touched && password.errors.minlength.requiredLength}} characters.
-          You have only {{password.touched && password.errors.minlength.actualLength}} characters.
-        </mat-error>
-
       </mat-form-field>
+      <ng-container
+        *ngIf="password.errors | onlyOneError: ['minlength', 'passwordStrength'] as error"
+      >
+
+        <div class="field-message" *ngIf="password.touched && error?.passwordStrength">
+          Your password must have upper case, lower case and numeric characters.
+        </div>
+
+        <div class="field-message" *ngIf="password.touched && error?.minlength">
+          Your email must have at least {{password.touched && error.minlength.requiredLength}} characters.
+          You have only {{password.touched && error.minlength.actualLength}} characters.
+        </div>
+
+      </ng-container>
       <button mat-raised-button color="primary"
               type="submit"
               class="loginButton"
