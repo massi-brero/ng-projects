@@ -1,9 +1,9 @@
 import {AsyncFactoryFn} from '@angular/cdk/testing';
-import {AbstractControl} from '@angular/forms';
+import {AbstractControl, AsyncValidatorFn} from '@angular/forms';
 import {CoursesService} from '../services/courses.service';
 import {map} from 'rxjs/operators';
 
-export function courseTitleValidator(coursesService: CoursesService): AsyncFactoryFn< {
+export function courseTitleValidator(coursesService: CoursesService): AsyncValidatorFn {
   return (control: AbstractControl) => {
     return coursesService.findAllCourses()
       .pipe(
