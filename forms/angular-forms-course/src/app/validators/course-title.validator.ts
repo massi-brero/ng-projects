@@ -1,22 +1,17 @@
-import {AbstractControl, AsyncValidatorFn} from '@angular/forms';
+import {AsyncFactoryFn} from '@angular/cdk/testing';
+import {AbstractControl} from '@angular/forms';
 import {CoursesService} from '../services/courses.service';
 import {map} from 'rxjs/operators';
 
+export function courseTitleValidator(coursesService: CoursesService): AsyncFactoryFn< {
+  return (control: AbstractControl) => {
+    return coursesService.findAllCourses()
+      .pipe(
+        map(courses => {
+          const titleExists = courses.find(course => course.description.toLowerCase() == control.value.toLowerCase());
 
-export function courseTitleValidator(courses: CoursesService):AsyncValidatorFn  {
-    return (control: AbstractControl) => {
-        return courses.findAllCourses()
-            .pipe(
-                map(courses => {
-
-                    const course = courses.find(
-                        course => course.description.toLowerCase()
-                            == control.value.toLowerCase() );
-
-                    return course ? {titleExists:true} : null;
-
-                })
-            )
-
-    }
+          return titleExists ? {titleExists: true} : null;
+        })
+      );
+  }
 }

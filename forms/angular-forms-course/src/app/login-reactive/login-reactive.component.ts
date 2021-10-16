@@ -8,32 +8,33 @@ import {createPasswordStrengthValidator} from '../validators/password-strength.v
   templateUrl: './login-reactive.component.html',
   styleUrls: ['./login-reactive.component.css']
 })
-export class LoginReactiveComponent implements OnInit {
+export class LoginReactiveComponent {
 
-   form = this.fb.group({
-      email: ['', {
-          validators: [Validators.required, Validators.email],
-          updateOn: 'blur'
-      }],
-      password: ['', [Validators.required, Validators.minLength(8),
-                        createPasswordStrengthValidator()]]
-   });
+  form = this.fb.group({
+    email: ['', {
+      validators: [
+        Validators.required,
+        Validators.email
+      ],
+      updateOn: 'blur'
+    }],
+    password: ['', [
+      Validators.required,
+      Validators.minLength(8),
+      createPasswordStrengthValidator()
+    ]]
+  });
 
-  constructor(private fb: FormBuilder) {
-
-
-  }
-
-  ngOnInit() {
-
+  constructor(
+    private fb: FormBuilder
+  ) {
   }
 
   get email() {
-      return this.form.controls['email'];
+    return this.form.controls['email'];
   }
 
   get password() {
-      return this.form.controls['password'];
+    return this.form.controls['password'];
   }
-
 }
