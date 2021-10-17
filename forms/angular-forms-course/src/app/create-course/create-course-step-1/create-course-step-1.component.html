@@ -1,4 +1,5 @@
 <div [formGroup]="form">
+
   <mat-form-field>
     <input type="text"
            matInput
@@ -11,6 +12,42 @@
       {{title.value.length}} / 60
     </mat-hint>
 
-    <mat-error *ngIf="courseTitle.errors?.titleExists">This title is already being used.</mat-error>
+    <mat-error *ngIf="courseTitle.errors?.titleExists">
+      This title is already being used.
+    </mat-error>
   </mat-form-field>
+
+  <mat-form-field>
+    <input type="text"
+           matInput
+           [matDatepicker]="releaseDatepicker"
+           formControlName="releasedAt"
+           placeholder="Release date"
+    >
+    <mat-datepicker-toggle #releaseDatepickerToggle
+                           [for]="releaseDatepicker"
+                           matSuffix
+    ></mat-datepicker-toggle>
+    <mat-datepicker #releaseDatepicker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-checkbox color="primary"
+                formControlName="downloadsAllowed">
+    Downloads allowed
+  </mat-checkbox>
+
+  <mat-form-field appearance="outline">
+    <textarea name=""
+              matInput
+              formControlName="descriptionLong"
+              placeholder="description field"
+              cols="30"
+              rows="10">
+      </textarea>
+  </mat-form-field>
+
+</div>
+
+<div class="form-val">
+  {{ form.value | json}}
 </div>

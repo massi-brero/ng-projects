@@ -44,6 +44,7 @@ import {FileUploadComponent} from './file-upload/file-upload.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {OnlyOneErrorPipe} from './pipes/only-one-error.pipe';
 import {LoginReactiveComponent} from './login-reactive/login-reactive.component';
+import {MatFormField, MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,8 @@ import {LoginReactiveComponent} from './login-reactive/login-reactive.component'
     MatCheckboxModule,
     MatStepperModule,
     MatProgressBarModule,
+    MatFormFieldModule,
+    MatInputModule,
     FormsModule,
     ReactiveFormsModule
   ],

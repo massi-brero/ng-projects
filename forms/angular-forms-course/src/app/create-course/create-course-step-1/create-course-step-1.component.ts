@@ -15,7 +15,7 @@ interface CourseCategory {
   templateUrl: './create-course-step-1.component.html',
   styleUrls: ['./create-course-step-1.component.scss']
 })
-export class CreateCourseStep1Component {
+export class CreateCourseStep1Component implements OnInit {
   form = this.fb.group({
     title: ['', {
       validators: [
@@ -25,7 +25,10 @@ export class CreateCourseStep1Component {
       ],
       asyncValidators: [courseTitleValidator(this.coursesService)],
       updateOn: 'blur'
-    }]
+    }],
+    releasedAt: [new Date(), Validators.required],
+    downloadsAllowed: [false, Validators.requiredTrue],
+    descriptionLong: ['', [Validators.required, Validators.minLength(10)]]
   });
 
   constructor(
@@ -34,8 +37,13 @@ export class CreateCourseStep1Component {
   ) {
   }
 
+  ngOnInit(): void {
+    // this.form.controls['releasedAt'].valueChanges.subscribe(val => {
+    //   console.log(val);
+    // });
+  }
+
   get courseTitle() {
     return this.form.controls['title'];
   }
-
 }

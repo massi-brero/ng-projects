@@ -13,5 +13,5 @@ export function courseTitleValidator(coursesService: CoursesService): AsyncValid
           return titleExists ? {titleExists: true} : null;
         })
       );
-  }
+  };
 }
