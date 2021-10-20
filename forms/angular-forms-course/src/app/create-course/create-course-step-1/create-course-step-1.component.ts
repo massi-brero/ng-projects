@@ -4,6 +4,7 @@ import {CoursesService} from '../../services/courses.service';
 import {Observable} from 'rxjs';
 import {filter} from 'rxjs/operators';
 import {courseTitleValidator} from '../../validators/course-title.validator';
+import {getCourseCategories} from '../../../../server/course-categories.route';
 
 interface CourseCategory {
   code: string;
@@ -27,9 +28,12 @@ export class CreateCourseStep1Component implements OnInit {
       updateOn: 'blur'
     }],
     releasedAt: [new Date(), Validators.required],
+    category: ['BEGINNER', Validators.required],
     downloadsAllowed: [false, Validators.requiredTrue],
     descriptionLong: ['', [Validators.required, Validators.minLength(10)]]
   });
+
+  courseCategories$: Observable<CourseCategory[]>;
 
   constructor(
     private fb: FormBuilder,
@@ -38,6 +42,8 @@ export class CreateCourseStep1Component implements OnInit {
   }
 
   ngOnInit(): void {
+    this.courseCategories$ = this.coursesService.findCourseCategories();
+
     // this.form.controls['releasedAt'].valueChanges.subscribe(val => {
     //   console.log(val);
     // });
