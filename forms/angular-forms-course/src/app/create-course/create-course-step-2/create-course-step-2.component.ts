@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {createPromoRangeValidator} from '../../validators/date-range.validator';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
-
+import {promoRangeValidator} from '../../validators/date-range.validator';
 
 @Component({
     selector: 'create-course-step-2',
@@ -25,7 +24,14 @@ export class CreateCourseStep2Component implements OnInit {
                 Validators.min(1),
                 Validators.max(9999),
                 Validators.pattern('[0-9]+')]
-        ]
+        ],
+        promoStartAt: [null],
+        promoEndAt: [null],
+    }, {
+        validators: [
+            promoRangeValidator()
+        ],
+        updateOn: 'blur'
     });
 
     constructor(private fb: FormBuilder) {
