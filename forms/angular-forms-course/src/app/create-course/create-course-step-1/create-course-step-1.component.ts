@@ -7,49 +7,61 @@ import {courseTitleValidator} from '../../validators/course-title.validator';
 import {getCourseCategories} from '../../../../server/course-categories.route';
 
 interface CourseCategory {
-  code: string;
-  description: string;
+    code: string;
+    description: string;
 }
 
 @Component({
-  selector: 'create-course-step-1',
-  templateUrl: './create-course-step-1.component.html',
-  styleUrls: ['./create-course-step-1.component.scss']
+    selector: 'create-course-step-1',
+    templateUrl: './create-course-step-1.component.html',
+    styleUrls: ['./create-course-step-1.component.scss']
 })
 export class CreateCourseStep1Component implements OnInit {
-  form = this.fb.group({
-    title: ['', {
-      validators: [
-        Validators.required,
-        Validators.minLength(5),
-        Validators.maxLength(60)
-      ],
-      asyncValidators: [courseTitleValidator(this.coursesService)],
-      updateOn: 'blur'
-    }],
-    releasedAt: [new Date(), Validators.required],
-    category: ['BEGINNER', Validators.required],
-    downloadsAllowed: [false, Validators.requiredTrue],
-    descriptionLong: ['', [Validators.required, Validators.minLength(10)]]
-  });
+    private STEP_1 = 'step-1';
 
-  courseCategories$: Observable<CourseCategory[]>;
+    form = this.fb.group({
+        title: ['', {
+            validators: [
+                Validators.required,
+                Validators.minLength(5),
+                Validators.maxLength(60)
+            ],
+            asyncValidators: [courseTitleValidator(this.coursesService)],
+            updateOn: 'blur'
+        }],
+        releasedAt: [new Date(), Validators.required],
+        category: ['BEGINNER', Validators.required],
+        downloadsAllowed: [false, Validators.requiredTrue],
+        descriptionLong: ['', [Validators.required, Validators.minLength(10)]]
+    });
 
-  constructor(
-    private fb: FormBuilder,
-    private coursesService: CoursesService
-  ) {
-  }
+    courseCategories$: Observable<CourseCategory[]>;
 
-  ngOnInit(): void {
-    this.courseCategories$ = this.coursesService.findCourseCategories();
+    constructor(
+        private fb: FormBuilder,
+        private coursesService: CoursesService
+    ) {
+    }
 
-    // this.form.controls['releasedAt'].valueChanges.subscribe(val => {
-    //   console.log(val);
-    // });
-  }
+    ngOnInit(): void {
+        this.courseCategories$ = this.coursesService.findCourseCategories();
+        const draft = localStorage.getItem(this.STEP_1);
 
-  get courseTitle() {
-    return this.form.controls['title'];
-  }
+        if (draft) {
+            this.form.setValue(JSON.parse(draft));
+        }
+
+        this.form.valueChanges.pipe(
+            filter(() => this.form.valid)
+        ).subscribe(val => localStorage.setItem(this.STEP_1, JSON.stringify(val)));
+
+
+        // this.form.controls['releasedAt'].valueChanges.subscribe(val => {
+        //   console.log(val);
+        // });
+    }
+
+    get courseTitle() {
+        return this.form.controls['title'];
+    }
 }
