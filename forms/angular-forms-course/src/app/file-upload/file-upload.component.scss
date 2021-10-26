@@ -6,6 +6,11 @@
 .file-upload {
   display: flex;
   align-items: flex-end;
+  width: 100%;
+
+  .mat-form-field {
+    flex-grow: 1;
+  }
 }
 
 .upload-btn {
