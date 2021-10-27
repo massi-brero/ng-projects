@@ -1,6 +1,7 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {HttpClient, HttpEventType} from '@angular/common/http';
 import {FileUploadService} from './file-upload.services';
+import EventEmitter = NodeJS.EventEmitter;
 
 @Component({
     selector: 'file-upload',
@@ -8,13 +9,18 @@ import {FileUploadService} from './file-upload.services';
     styleUrls: ['file-upload.component.scss'],
     providers: []
 })
-export class FileUploadComponent {
+export class FileUploadComponent implements OnInit{
     @Input() requiredFileType = '';
     fileName = '';
     uploadProgress = 0;
 
-
     constructor(private fileUploadService: FileUploadService) {
+    }
+
+    ngOnInit() {
+        this.fileUploadService.uploadInterupted$.subscribe(() => {
+            this.uploadProgress = 0;
+        });
     }
 
     onFileSelected(event: Event) {

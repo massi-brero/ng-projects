@@ -1,8 +1,8 @@
-import {Injectable} from '@angular/core';
+import {Injectable, EventEmitter} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {formatDate} from '@angular/common';
-import {catchError} from 'rxjs/operators';
-import {of, pipe} from 'rxjs';
+import {catchError, finalize} from 'rxjs/operators';
+import {of, pipe, Subject} from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -10,6 +10,8 @@ import {of, pipe} from 'rxjs';
 export class FileUploadService {
     postThumbnailUrl = '/api/thumbnail-upload';
     uploadError = false;
+    uploadInteruptedSubject = new Subject();
+    uploadInterupted$ = this.uploadInteruptedSubject.asObservable();
 
     constructor(
         private http: HttpClient
@@ -22,10 +24,13 @@ export class FileUploadService {
             observe: 'events'
         })
             .pipe(
-            catchError(e => {
-                this.uploadError = true;
-                return of(e);
-            })
-        );
+                catchError(e => {
+                    this.uploadError = true;
+                    return of(e);
+                }),
+                finalize(() => {
+                    this.uploadInteruptedSubject.next();
+                })
+            );
     }
 }
