@@ -3,15 +3,16 @@ import {HttpClient} from '@angular/common/http';
 import {formatDate} from '@angular/common';
 import {catchError, finalize} from 'rxjs/operators';
 import {of, pipe, Subject} from 'rxjs';
+import {ControlValueAccessor} from '@angular/forms';
 
 @Injectable({
     providedIn: 'root'
 })
-export class FileUploadService {
+export class FileUploadService{
     postThumbnailUrl = '/api/thumbnail-upload';
     uploadError = false;
-    uploadInteruptedSubject = new Subject();
-    uploadInterupted$ = this.uploadInteruptedSubject.asObservable();
+    uploadInterruptedSubject = new Subject();
+    uploadInterrupted$ = this.uploadInterruptedSubject.asObservable();
 
     constructor(
         private http: HttpClient
@@ -29,7 +30,7 @@ export class FileUploadService {
                     return of(e);
                 }),
                 finalize(() => {
-                    this.uploadInteruptedSubject.next();
+                    this.uploadInterruptedSubject.next();
                 })
             );
     }

@@ -4,7 +4,8 @@
         <mat-radio-button value="premium">Premium</mat-radio-button>
     </mat-radio-group>
 
-    <file-upload requiredFileType="image/png"
+    <file-upload formControlName="thumbnail"
+                 requiredFileType="image/png"
     >
 
     </file-upload>
@@ -26,7 +27,8 @@
             <input matEndDate placeholder="End date" formControlName="promoEndAt">
         </mat-date-range-input>
 
-        <mat-error *ngIf="form.errors?.promoPeriod && form.dirty">The start date must be before the end date.</mat-error>
+        <mat-error *ngIf="form.errors?.promoPeriod && form.dirty">The start date must be before the end date.
+        </mat-error>
 
         <mat-datepicker-toggle matSuffix [for]="promoPicker"></mat-datepicker-toggle>
         <mat-date-range-picker #promoPicker></mat-date-range-picker>
