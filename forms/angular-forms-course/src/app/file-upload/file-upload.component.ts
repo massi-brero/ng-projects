@@ -1,29 +1,38 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {HttpClient, HttpEventType} from '@angular/common/http';
+import {HttpEventType} from '@angular/common/http';
 import {FileUploadService} from './file-upload.services';
-import EventEmitter = NodeJS.EventEmitter;
-import {AbstractControl, ControlValueAccessor, NG_VALUE_ACCESSOR, ValidationErrors, Validator,} from '@angular/forms';
+import {AbstractControl, ControlValueAccessor, NG_VALIDATORS, NG_VALUE_ACCESSOR, ValidationErrors, Validator,} from '@angular/forms';
 
 @Component({
     selector: 'file-upload',
     templateUrl: 'file-upload.component.html',
     styleUrls: ['file-upload.component.scss'],
-    providers: [{
-        provide: NG_VALUE_ACCESSOR,
-        multi: true,
-        useExisting: FileUploadComponent
-    }]
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            multi: true,
+            useExisting: FileUploadComponent
+        },
+        {
+            provide: NG_VALIDATORS,
+            multi: true,
+            useExisting: FileUploadComponent
+        }
+    ]
 })
 export class FileUploadComponent implements OnInit, ControlValueAccessor, Validator {
 
-    @Input() requiredFileType = '';
+    @Input() requiredFileType;
     filename = '';
     uploadProgress = 0;
     isDisabled = false;
-    fileUploadSuccess = false;
+    fileUploadError: boolean;
+    fileTypeError: boolean;
     onChange = (filename: string) => {
     };
     onTouched = () => {
+    };
+    onValidatorChange = () => {
     };
 
     constructor(private fileUploadService: FileUploadService) {
@@ -31,6 +40,7 @@ export class FileUploadComponent implements OnInit, ControlValueAccessor, Valida
 
     ngOnInit() {
         this.fileUploadService.uploadInterrupted$.subscribe(() => {
+            this.fileUploadError = true;
             this.uploadProgress = 0;
         });
     }
@@ -40,7 +50,11 @@ export class FileUploadComponent implements OnInit, ControlValueAccessor, Valida
     }
 
     registerOnTouched(fn: any): void {
+        this.onTouched = fn;
+    }
 
+    registerOnValidatorChange(fn: () => void): void {
+        this.onValidatorChange = fn;
     }
 
     setDisabledState(isDisabled: boolean): void {
@@ -56,42 +70,47 @@ export class FileUploadComponent implements OnInit, ControlValueAccessor, Valida
         fileUpload.click();
     }
 
-
     onFileSelected(event: Event) {
+        this.fileUploadError = false;
+        this.fileTypeError = false;
         const file: File = (event.target as HTMLInputElement).files[0];
+
+        if (file.type !== this.requiredFileType) {
+            this.fileTypeError = true;
+        }
 
         if (file) {
             console.log(file);
             this.filename = file.name;
             const formData = new FormData();
             formData.append('thumbnail', file);
+
             this.fileUploadService
                 .upload(formData)
                 .subscribe(uploadEvent => {
                         if (uploadEvent.type === HttpEventType.UploadProgress) {
                             this.uploadProgress = Math.round((uploadEvent.loaded / uploadEvent.total) * 100);
                         } else if (uploadEvent.type === HttpEventType.Response) {
-                            this.fileUploadSuccess = true;
                             this.onChange(this.filename);
+                            this.onValidatorChange();
                         }
                     }
                 );
         }
     }
 
-    registerOnValidatorChange(fn: () => void): void {
-    }
-
     validate(control: AbstractControl): ValidationErrors | null {
-        if (this.fileUploadSuccess) {
+        const errors: any = {};
+
+        if (this.fileTypeError) {
+            errors.requiredFileType = this.requiredFileType;
+        } else if (this.fileUploadError) {
+            errors.uploadFailed = true;
+        } else {
             return null;
         }
 
-        let error: any = {
-            requiredFileType: this.requiredFileType
-        };
-
-
+        return errors;
     }
 }
 
