@@ -32,7 +32,7 @@ export class CreateCourseStep1Component implements OnInit {
         releasedAt: [new Date(), Validators.required],
         category: ['BEGINNER', Validators.required],
         downloadsAllowed: [false, Validators.requiredTrue],
-        address: [null, Validators.required],
+        // address: [null, Validators.required],
         descriptionLong: ['', [Validators.required, Validators.minLength(10)]]
     });
 

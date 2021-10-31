@@ -1,0 +1,34 @@
+<h3>Add course lessons</h3>
+
+<div class="add-lessons-form"
+     [formGroup]="form"
+>
+    <ng-container formArrayName="lessons">
+        <ng-container *ngFor="let lesson of lessons.controls; let idx = index">
+
+            <div class="lesson-form-row" [formGroup]="lesson">
+                <mat-form-field appearance="fill">
+                    <input type="text"
+                           matInput
+                           placeholder="Lesson title"
+                           formControlName="title"
+                    >
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-select placeholder="Lesson level" formControlName="level">
+                        <mat-option value="beginner">Beginner</mat-option>
+                        <mat-option value="intermediate">Intermediate</mat-option>
+                        <mat-option value="advanced">Advanced</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-icon class="delete-btn" (click)="delete(idx)">delete_forever</mat-icon>
+            </div>
+
+        </ng-container>
+    </ng-container>
+
+    <button mat-mini-fab (click)="addLesson()">
+        <mat-icon class="mat-18">add</mat-icon>
+    </button>
+</div>
