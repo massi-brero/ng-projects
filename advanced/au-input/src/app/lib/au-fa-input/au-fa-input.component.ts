@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, ContentChild, HostBinding, Input, OnInit, ViewEncapsulation,} from '@angular/core'
+import {AfterContentInit, Component, ContentChild, HostBinding, Input, OnInit, ViewEncapsulation} from '@angular/core'
 import {InputRefDirective} from '../common/input-ref.directive'
 
 @Component({
