@@ -19,6 +19,7 @@ import {InputRefDirective} from '../common/input-ref.directive'
 export class AuFaInputComponent implements OnInit, AfterContentInit {
   @Input() icon: string
   @Input() placeholder: string
+  @Input() elemId: string
   @ViewChild(InputRefDirective) input: HTMLInputElement
 
   constructor() {
