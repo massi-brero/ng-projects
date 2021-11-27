@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "lib": {
+    "entryFile": "./src/app/lib/public_api.ts"
+  },
+  "dest": "dist-ng-au-input-lib",
+  "whitelistedNonPeerDependencies": [
+    "ng-packagr",
+    "prettier",
+    "angular",
+    "core-js",
+    "rxjs",
+    "zone.js"
+  ]
+}

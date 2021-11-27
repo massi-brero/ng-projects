@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "packagr": "ng-packagr -p ng-package.json"
   },
   "private": false,
   "dependencies": {
@@ -22,11 +23,15 @@
     "@angular/platform-browser-dynamic": "12.2.13",
     "@angular/router": "12.2.13",
     "core-js": "^2.4.1",
+    "ng-packagr": "^12.2.3",
     "prettier": "^2.4.1",
     "rxjs": "6.6.7",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },
+  "allowedNonPeerDependencies": [
+    "ng-packagr"
+  ],
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.13",
     "@angular/cli": "^12.2.13",
