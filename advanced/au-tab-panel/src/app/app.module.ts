@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AuTabPanelComponent } from './au-tab-panel/au-tab-panel.component';
 import { AuTabComponent } from './au-tab/au-tab.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AuTabComponent } from './au-tab/au-tab.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
