@@ -1,9 +1,9 @@
 import {
   AfterContentInit,
   Component,
-  ContentChildren,
+  ContentChildren, Input,
   OnInit,
-  QueryList,
+  QueryList, TemplateRef, ViewChild,
 } from '@angular/core'
 import { AuTabComponent } from '../au-tab/au-tab.component'
 
@@ -16,18 +16,25 @@ export class AuTabPanelComponent implements AfterContentInit {
   @ContentChildren(AuTabComponent)
   tabs: QueryList<AuTabComponent>
 
-  constructor() {}
+  @Input()
+  headerTemplate: TemplateRef<any>
 
   ngAfterContentInit(): void {
-    const selectedTab = this.tabs.find(tab => tab.selected)
+    const selectedTab = this.tabs.find((tab) => tab.selected)
 
-    if (!selectedTab) {
+    if (!selectedTab && this.tabs.first) {
       this.tabs.first.selected = true
     }
   }
 
   selectTab(tabClicked: AuTabComponent) {
-    this.tabs.forEach(tab => tab.selected = false)
+    this.tabs.forEach((tab) => (tab.selected = false))
     tabClicked.selected = true
+  }
+
+  get tabsContext() {
+    return {
+      tabs: this.tabs,
+    }
   }
 }
