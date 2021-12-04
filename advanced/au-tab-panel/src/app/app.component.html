@@ -7,25 +7,25 @@
     <button (click)="tabPanel.selectTab(signupTab)">Sign up</button>
   </ng-template>
 
-  <au-tab-panel #tabPanel [headerTemplate]="null">
+  <au-tab-panel #tabPanel id="tab-panel">
     <au-tab title="Login" #loginTab>
       <form>
-        <div class="form-field"><label>Email:</label><input /></div>
-        <div class="form-field"><label>Password:</label><input /></div>
+        <div class="form-field test-login-email-input" ><label>Email:</label><input></div>
+        <div class="form-field"><label>Password:</label><input></div>
       </form>
     </au-tab>
 
     <au-tab title="Sign up" #signupTab>
       <form>
-        <div class="form-field"><label>Email:</label><input /></div>
-        <div class="form-field"><label>Password:</label><input /></div>
-        <div class="form-field"><label>Confirm Password:</label><input /></div>
+        <div class="form-field"><label>Email:</label><input></div>
+        <div class="form-field"><label>Password:</label><input></div>
+        <div class="form-field"><label>Confirm Password:</label><input></div>
       </form>
     </au-tab>
 
-    <au-tab title="Contact" >
+    <au-tab title="Contact" #contactTab>
       <form>
-        <div class="form-field"><label>Email:</label><input /></div>
+        <div class="form-field"><label>Email:</label><input class="test-contact-email-input"></div>
         <div class="form-field">
           <label>Message:</label>
           <textarea></textarea>
