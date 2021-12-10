@@ -1,11 +1,11 @@
-import { Component, Input, OnInit, TemplateRef, ViewEncapsulation } from '@angular/core';
+import { Component, Input, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'au-modal',
   templateUrl: './au-modal.component.html',
   styleUrls: ['./au-modal.component.scss']
 })
-export class AuModalComponent implements OnInit {
+export class AuModalComponent {
 
   @Input()
   body: TemplateRef<any>
@@ -13,7 +13,8 @@ export class AuModalComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit() {
+  closeModal() {
+
   }
 
 }
