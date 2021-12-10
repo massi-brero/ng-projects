@@ -17,8 +17,8 @@ export class AuModalOpenOnClickDirective {
       els = [els]
     }
 
-    els.forEach(() => {
-      addEventListener('click', () => {
+    els.forEach(btn => {
+      btn.addEventListener('click', () => {
         this.viewContainer.clear()
         this.viewContainer.createEmbeddedView(this.templateRef)
       })
