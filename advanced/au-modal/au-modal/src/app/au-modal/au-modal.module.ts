@@ -1,8 +1,8 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {AuModalComponent} from './au-modal.component';
-import { AuModalOpenOnClickDirective } from './au-modal-open-on-click.directive';
-import { AuTabComponent } from 'au-tab-panel/src/app/au-tab/au-tab.component';
+import { ModuleWithProviders, NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { AuModalComponent } from './au-modal.component'
+import { AuModalOpenOnClickDirective } from './directives/au-modal-open-on-click.directive'
+import { AuModalService } from './services/au-modal.service'
 
 
 @NgModule({
@@ -17,7 +17,15 @@ import { AuTabComponent } from 'au-tab-panel/src/app/au-tab/au-tab.component';
 })
 export class AuModalModule {
 
-
+  /**
+   * Allows to implement the service as a singleton.
+   */
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: AuModalModule,
+      providers: [AuModalService]
+    }
+  }
 }
 
 
