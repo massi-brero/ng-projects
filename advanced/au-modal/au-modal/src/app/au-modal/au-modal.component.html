@@ -1,4 +1,4 @@
-<div class="modal-overlay" (click)="closeModal()">
+<div class="modal-overlay" (click)="onClickBackdrop()">
   <div class="modal-body" (click)="cancelClick($event)">
 
     <ng-container *ngIf="body else projectContent">

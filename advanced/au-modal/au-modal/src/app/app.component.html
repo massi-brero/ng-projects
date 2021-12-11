@@ -64,7 +64,12 @@
 
   </ng-template>
 
-  <au-modal class="auth-modal" [body]="authModalBody" *auModalOpenOnClick="[loginButton, signUpButton]">
+  <au-modal class="auth-modal"
+            [body]="authModalBody"
+            *auModalOpenOnClick="[loginButton, signUpButton]"
+            [hideOnClickBackdrop]="true"
+            [hideOnEsc] = "true"
+  >
   </au-modal>
 
   <div class="modal-buttons">
