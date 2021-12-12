@@ -1,11 +1,12 @@
-import { Component, Input, OnInit, TemplateRef } from '@angular/core'
+import { Component, Input, OnInit, TemplateRef, ViewEncapsulation } from '@angular/core'
 import { AuModalService } from './services/au-modal.service'
 import { EventManager } from '@angular/platform-browser'
 
 @Component({
   selector: 'au-modal',
   templateUrl: './au-modal.component.html',
-  styleUrls: ['./au-modal.component.scss']
+  styleUrls: ['./au-modal.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AuModalComponent implements OnInit {
 
@@ -18,6 +19,9 @@ export class AuModalComponent implements OnInit {
   @Input()
   hideOnClickBackdrop = true
 
+  @Input()
+  context: any
+
   constructor(
     private modalService: AuModalService,
     private eventManager: EventManager
@@ -27,12 +31,12 @@ export class AuModalComponent implements OnInit {
   ngOnInit() {
     if (this.hideOnEsc) {
       this.eventManager.addGlobalEventListener('window', 'keyup.esc', () => {
-        this.closeModal()
+        this.close()
       })
     }
   }
 
-  closeModal() {
+  close() {
     this.modalService.close()
   }
 

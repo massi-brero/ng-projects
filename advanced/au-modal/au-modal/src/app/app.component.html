@@ -20,41 +20,42 @@
 
   <h1>Modal Examples</h1>
 
-  <ng-template #authModalBody>
-    <au-tab-panel>
-      <au-tab title="Login">
+  <ng-template #authModalBody let-title="title" let-loginTabActive="loginTabActive">
+    <h5>{{title}}</h5>
+    <au-tab-panel class="login-modal">
+      <au-tab title="Login" [selected]="loginTabActive">
         <form>
           <div class="form-field">
             <au-fa-input id="email-field" icon="envelope">
-              <input auInput type="email" name="email"
+              <input  type="email" name="email"
                      placeholder="Email" autocomplete="off">
             </au-fa-input>
           </div>
           <div class="form-field">
             <au-fa-input icon="lock">
-              <input auInput type="password" name="email"
+              <input  type="password" name="email"
                      placeholder="Password" autocomplete="off">
             </au-fa-input>
           </div>
         </form>
       </au-tab>
-      <au-tab title="Sign Up">
+      <au-tab title="Sign Up" [selected]="!loginTabActive">
         <form>
           <div class="form-field">
             <au-fa-input icon="envelope">
-              <input auInput type="email" name="email"
+              <input  type="email" name="email"
                      placeholder="Email" autocomplete="off">
             </au-fa-input>
           </div>
           <div class="form-field">
             <au-fa-input icon="lock">
-              <input auInput type="password" name="email"
+              <input  type="password" name="email"
                      placeholder="Password" autocomplete="off">
             </au-fa-input>
           </div>
           <div class="form-field">
             <au-fa-input icon="lock">
-              <input auInput type="password" name="email"
+              <input  type="password" name="email"
                      placeholder="Confirm Password" autocomplete="off">
             </au-fa-input>
           </div>
@@ -68,15 +69,21 @@
             [body]="authModalBody"
             *auModalOpenOnClick="[loginButton, signUpButton]"
             [hideOnClickBackdrop]="true"
-            [hideOnEsc] = "true"
+            [hideOnEsc]="true"
+            [context]="{
+              title: 'Login or Sign up',
+              loginTabActive: loginActive
+            }"
+            #modal
   >
+    <i class="fa fa-times" (click)="modal.close()"></i>
   </au-modal>
 
   <div class="modal-buttons">
 
-    <button #loginButton>Login</button>
+    <button #loginButton (click)="setLoginActive(true)">Login</button>
 
-    <button #signUpButton>Sign Up</button>
+    <button #signUpButton (click)="setLoginActive(false)">Sign Up</button>
 
   </div>
 
