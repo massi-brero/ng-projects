@@ -1,10 +1,16 @@
-import { Directive, Input, OnInit, TemplateRef, ViewContainerRef } from '@angular/core';
-import { AuModalService } from '../services/au-modal.service';
+import { Directive, Input, OnDestroy, OnInit, TemplateRef, ViewContainerRef } from '@angular/core'
+import { AuModalService } from '../services/au-modal.service'
 
 @Directive({
   selector: '[auModalOpenOnClick]'
 })
-export class AuModalOpenOnClickDirective implements OnInit {
+export class AuModalOpenOnClickDirective implements OnInit, OnDestroy {
+
+  buttons: HTMLButtonElement[]
+  clickHandler = (() => {
+    this.viewContainer.clear()
+    this.viewContainer.createEmbeddedView(this.templateRef)
+  }).bind(this)
 
   constructor(
     private templateRef: TemplateRef<any>,
@@ -16,7 +22,14 @@ export class AuModalOpenOnClickDirective implements OnInit {
   ngOnInit(): void {
     this.modalService.close$.subscribe(() => {
       this.viewContainer.clear()
-    });
+    })
+  }
+
+  ngOnDestroy() {
+    this.buttons.forEach(btn => btn.removeEventListener(
+      'click',
+      this.clickHandler
+    ))
   }
 
   @Input()
@@ -27,10 +40,7 @@ export class AuModalOpenOnClickDirective implements OnInit {
     }
 
     els.forEach(btn => {
-      btn.addEventListener('click', () => {
-        this.viewContainer.clear()
-        this.viewContainer.createEmbeddedView(this.templateRef)
-      })
+      btn.addEventListener('click', this.clickHandler)
     })
   }
 
