@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
-import {select, Store} from '@ngrx/store'
+import { select, Store } from '@ngrx/store'
 
-import { registerAction } from '../../store/actions'
-import {Observable} from "rxjs";
-import {AppStateInterface} from "../../../shared/types/appState.interface";
-import {isSubmittingSelector} from "../../store/selectors";
+import { registerAction } from '../../store/actions/register.action'
+import { Observable } from 'rxjs'
+import { AppStateInterface } from '../../../shared/types/appState.interface'
+import { isSubmittingSelector } from '../../store/selectors'
+import { AuthService } from '../services/auth.service'
+import { CurrentUserInterface } from '../../../shared/types/currentUser.interface'
 
 @Component({
   selector: 'mc-register',
@@ -18,7 +20,8 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private store: Store<AppStateInterface>
+    private store: Store<AppStateInterface>,
+    private authService: AuthService
   ) {}
 
   ngOnInit(): void {
@@ -37,10 +40,15 @@ export class RegisterComponent implements OnInit {
   onSubmit() {
     console.log(this.form.value, this.form.valid)
     this.store.dispatch(registerAction(this.form.value))
+    this.authService
+      .register({ user: this.form.value })
+      .subscribe((currentUser: CurrentUserInterface) => {
+        console.log(currentUser)
+      })
   }
 
   private initValues(): void {
     this.isSubmitting$ = this.store.pipe(select(isSubmittingSelector))
-    console.log('isSubmitting$',this.isSubmitting$)
+    console.log('isSubmitting$', this.isSubmitting$)
   }
 }
