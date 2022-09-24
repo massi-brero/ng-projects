@@ -1,0 +1,5 @@
+<app-goal
+    *ngFor="let goal of courseGoals"
+    [goal]="goal"
+    (click)="activateGoal(goal)"
+></app-goal>
