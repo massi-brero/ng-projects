@@ -2,4 +2,5 @@
     *ngFor="let goal of courseGoals"
     [goal]="goal"
     (click)="activateGoal(goal)"
+    [ngClass]="{ active: goal.isActive }"
 ></app-goal>
