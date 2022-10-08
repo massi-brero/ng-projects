@@ -1,0 +1,18 @@
+h1 {
+  color: red;
+}
+
+:host {
+  display: block;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+:host(.favorite) {
+   border: 1px solid red;
+}
+
+//#quote {
+//  border: 1px solid black;
+//  padding: 20px;
+//}
