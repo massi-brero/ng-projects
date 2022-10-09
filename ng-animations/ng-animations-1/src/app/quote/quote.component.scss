@@ -9,7 +9,16 @@ h1 {
 }
 
 :host(.favorite) {
-   border: 1px solid red;
+  border: 3px solid red;
+}
+
+:host-context(.boring) {
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+:host-context(.boring) ::ng-deep h1 {
+  color: #ccc;
 }
 
 //#quote {

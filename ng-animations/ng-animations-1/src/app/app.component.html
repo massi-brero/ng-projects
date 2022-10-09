@@ -1,11 +1,17 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h1>My Quotes</h1>
-      <app-quote class="special"></app-quote>
       <div class="interesting">
-        <app-quote class="favorite"></app-quote>
-        <app-author></app-author>
+        <app-quote [ngClass]="{'favorite super-favorite': isFavorite}"
+                   (click)="toggleFavorite()"
+                   [ngStyle]="{'width.%': isFavorite ? '70' : '50'}"
+        ></app-quote>
+      </div>
+      <button class="btn btn-danger"
+              (click)="toggleBoring()"
+      >Show boring quotes</button>
+      <div class="boring">
+        <app-quote></app-quote>
       </div>
     </div>
   </div>
