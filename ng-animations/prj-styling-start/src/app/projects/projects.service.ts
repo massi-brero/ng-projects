@@ -1,7 +1,9 @@
 import { Observable ,  Observer } from 'rxjs';
 
 import { Project } from './project.model';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class ProjectsService {
   private projects: Project[] = [
     { name: 'Learn Angular Styles', description: 'Practice hard to understand how you may style components and update styles dynamically', status: 'active'},

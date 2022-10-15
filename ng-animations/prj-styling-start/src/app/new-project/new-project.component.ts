@@ -11,7 +11,7 @@ import { Project } from '../projects/project.model';
 export class NewProjectComponent implements OnInit {
   @Output() creationCancelled = new EventEmitter<void>();
   @Output() projectCreated = new EventEmitter<Project>();
-  @ViewChild('f', {static: false}) form: NgForm;
+  @ViewChild('f') form: NgForm;
   availableStatus = [
     'active',
     'inactive',
