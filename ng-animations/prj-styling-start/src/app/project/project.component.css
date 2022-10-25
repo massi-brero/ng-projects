@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  border: 1px solid darkslategrey;
+  border-radius: 4px;
+  box-shadow: 3px 3px 2px #ccc;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+:host(.marked) {
+  border: 2px solid dodgerblue;
+  padding: 19px;
+}
+
+.form-control {
+  display: inline-block;
+  width: 50%;
+}
+
+.btn {
+  margin-left: 8px;
+}

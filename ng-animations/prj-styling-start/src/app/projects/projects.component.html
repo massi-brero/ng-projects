@@ -37,6 +37,7 @@
     <app-project
       *ngFor="let prj of projects; let i = index"
       [project]="prj"
+      [ngClass]="{marked: markedPrjIndex === i}"
       (statusUpdated)="onStatusUpdated($event, i)"
       (projectDeleted)="onProjectDeleted(i)"
       (click)="markedPrjIndex = i"></app-project>
