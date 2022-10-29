@@ -7,6 +7,11 @@
   padding: 20px;
 }
 
+:host(.inactive) {
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
 :host(.marked) {
   border: 2px solid dodgerblue;
   padding: 19px;

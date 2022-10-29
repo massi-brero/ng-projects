@@ -2,7 +2,9 @@
   {{ project.name }}
   <!-- Show different usages of ngClass and ngStyle"-->
   <span
-    class="label label-default">{{ project.status }}</span>
+    class="label"
+    [ngClass]="getPrjStatusClass()"
+  >{{ project.status }}</span>
 </h3>
 <hr>
 <p>{{ project.description }}</p>

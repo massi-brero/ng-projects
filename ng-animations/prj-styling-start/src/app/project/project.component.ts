@@ -1,6 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core'
 
-import { Project } from '../projects/project.model';
+import {Project} from '../projects/project.model'
 
 @Component({
   selector: 'app-project',
@@ -8,20 +8,30 @@ import { Project } from '../projects/project.model';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
-  @Input() project: Project;
-  @Output() statusUpdated = new EventEmitter<string>();
-  @Output() projectDeleted = new EventEmitter<void>();
+  @Input() project: Project
+  @Output() statusUpdated = new EventEmitter<string>()
+  @Output() projectDeleted = new EventEmitter<void>()
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
   onUpdateStatus(newStatus: string) {
-    this.statusUpdated.emit(newStatus);
+    this.statusUpdated.emit(newStatus)
   }
 
   onDelete() {
-    this.projectDeleted.emit();
+    this.projectDeleted.emit()
+  }
+
+  getPrjStatusClass() {
+    console.log(this.project.status)
+    return {
+      'label-success': this.project.status === 'active',
+      'label-default': this.project.status === 'inactive',
+      'label-danger': this.project.status === 'critical',
+    }
   }
 }
