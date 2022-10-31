@@ -1,0 +1,39 @@
+#div1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: background-color .5s ease-out,
+  width .7s ease-out;
+}
+
+#div2 {
+  width: 150px;
+  height: 75px;
+  background-color: green;
+}
+
+.animate {
+  animation: moved 2s ease-out forwards;
+}
+
+.fat {
+  width: 200px;
+}
+
+@keyframes moved {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(300px) scale(1.2);
+  }
+  75% {
+    transform: translateX(400px) scale(1);
+    opacity: .3;
+  }
+  100% {
+    transform: translateX(400px) scale(1);
+    opacity: 0.1;
+  }
+}
