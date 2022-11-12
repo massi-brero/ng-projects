@@ -1,11 +1,5 @@
-import { Component, OnInit } from '@angular/core'
-import {
-    FormBuilder,
-    FormGroup,
-    NonNullableFormBuilder,
-    ValidatorFn,
-    Validators,
-} from '@angular/forms'
+import { Component } from '@angular/core'
+import { NonNullableFormBuilder, Validators } from '@angular/forms'
 import { createPasswordStrengthValidator } from '../validators/password-strength.validator'
 
 @Component({

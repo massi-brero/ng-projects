@@ -1,0 +1,8 @@
+<div class="" [formGroup]="form">
+  <mat-form-field>
+    <input matInput placeholder="Course Title" formControlName="title"  #title>
+    <mat-hint align="end">
+      Characters left: {{titleMaxLength - title.value.length}}
+    </mat-hint>
+  </mat-form-field>
+</div>
