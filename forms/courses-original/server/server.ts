@@ -1,35 +1,32 @@
+import * as express from 'express'
+import { Application } from 'express'
+import { getAllCourses, getCourseById } from './get-courses.route'
+import { searchLessons } from './search-lessons.route'
+import { getCourseCategories } from './course-categories.route'
+import { onFileupload } from './file-upload.route'
+const fileUpload = require('express-fileupload')
 
+const app: Application = express()
 
-import * as express from 'express';
-import {Application} from "express";
-import {getAllCourses, getCourseById} from "./get-courses.route";
-import {searchLessons} from "./search-lessons.route";
-import {getCourseCategories} from './course-categories.route';
-import {onFileupload} from './file-upload.route';
-const fileUpload = require('express-fileupload');
+const cors = require('cors')
 
-const app: Application = express();
+app.use(cors())
 
-const cors = require('cors');
+app.use(fileUpload())
 
-app.use(cors({origin: true}));
+app.route('/api/courses').get(getAllCourses)
 
-app.use(fileUpload());
+app.route('/api/courses/:id').get(getCourseById)
 
-app.route('/api/courses').get(getAllCourses);
+app.route('/api/lessons').get(searchLessons)
 
-app.route('/api/courses/:id').get(getCourseById);
+app.route('/api/course-categories').get(getCourseCategories)
 
-app.route('/api/lessons').get(searchLessons);
+app.route('/api/thumbnail-upload').post(onFileupload)
 
-app.route('/api/course-categories').get(getCourseCategories);
-
-app.route('/api/thumbnail-upload').post(onFileupload);
-
-const httpServer:any = app.listen(9000, () => {
-    console.log("HTTP REST API Server running at http://localhost:" + httpServer.address().port);
-});
-
-
-
-
+const httpServer: any = app.listen(9000, () => {
+    console.log(
+        'HTTP REST API Server running at http://localhost:' +
+            httpServer.address().port
+    )
+})

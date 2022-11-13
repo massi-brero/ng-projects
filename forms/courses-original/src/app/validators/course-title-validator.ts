@@ -14,12 +14,12 @@ export function courseTitleValidator(
     return (control: AbstractControl): Observable<ValidationErrors | null> => {
         return courses.findAllCourses().pipe(
             map((courses: Course[]) => {
-                const course = courses.find((course: Course) => {
-                    course.description.toLowerCase() ===
+                const course = courses.find(
+                    (course: Course) =>
+                        course.description.toLowerCase() ===
                         control.value.toLowerCase()
-
-                    return course ? { titleExists: true } : null
-                })
+                )
+                return course ? { titleExists: true } : null
             })
         )
     }
