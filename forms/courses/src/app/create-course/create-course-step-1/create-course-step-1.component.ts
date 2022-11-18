@@ -27,6 +27,7 @@ export class CreateCourseStep1Component implements OnInit {
     }
 
     private initForm() {
+        console.log('huhu')
         return this.fb.group({
             title: [
                 '',
@@ -46,6 +47,7 @@ export class CreateCourseStep1Component implements OnInit {
                 '',
                 [Validators.required, Validators.minLength(3)],
             ],
+            category: ['BEGINNER', Validators.required],
         })
     }
 }
