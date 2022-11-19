@@ -27,7 +27,6 @@ export class CreateCourseStep1Component implements OnInit {
     }
 
     private initForm() {
-        console.log('huhu')
         return this.fb.group({
             title: [
                 '',
