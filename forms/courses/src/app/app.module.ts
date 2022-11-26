@@ -42,6 +42,7 @@ import { CreateCourseStep1Component } from './create-course/create-course-step-1
 import { FileUploadComponent } from './file-upload/file-upload.component'
 import { MatProgressBarModule } from '@angular/material/progress-bar'
 import { LoginReactiveComponent } from './login-reactive/login-reactive.component'
+import {FileService} from './services/file.service';
 
 @NgModule({
     declarations: [
@@ -88,7 +89,7 @@ import { LoginReactiveComponent } from './login-reactive/login-reactive.componen
         MatProgressBarModule,
         ReactiveFormsModule,
     ],
-    providers: [CoursesService, CourseResolver],
+    providers: [CoursesService, CourseResolver, FileService],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
