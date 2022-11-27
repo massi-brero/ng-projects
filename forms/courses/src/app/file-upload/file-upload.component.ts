@@ -3,18 +3,41 @@ import { FileService } from '../services/file.service'
 import { catchError, finalize } from 'rxjs/operators'
 import { of } from 'rxjs'
 import { HttpEventType } from '@angular/common/http'
-import { ControlValueAccessor } from '@angular/forms'
+import {
+    AbstractControl,
+    ControlValueAccessor,
+    NG_VALIDATORS,
+    NG_VALUE_ACCESSOR,
+    ValidationErrors,
+    Validator,
+} from '@angular/forms'
 
 @Component({
     selector: 'file-upload',
     templateUrl: 'file-upload.component.html',
     styleUrls: ['file-upload.component.scss'],
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            multi: true,
+            useExisting: FileUploadComponent,
+        },
+        {
+            provide: NG_VALIDATORS,
+            multi: true,
+            useExisting: FileUploadComponent,
+        },
+    ],
 })
-export class FileUploadComponent implements ControlValueAccessor {
+export class FileUploadComponent implements ControlValueAccessor, Validator {
     @Input() requiredFileType: string
     filename = ''
     fileUploadError = false
-    onChange: Function
+    onChange = (_) => {}
+    onTouched = () => {}
+    onValidatorChange = () => {}
+    isDisabled = false
+    fileUploadSuccess = false
 
     constructor(private fileService: FileService) {}
 
@@ -47,21 +70,54 @@ export class FileUploadComponent implements ControlValueAccessor {
                         this.uploadProgress = Math.round(
                             (event.loaded / event.total) * 100
                         )
-                    }
-                    else if (event.type === HttpEventType.Response) {
-                      this.onChange(this.filename)
+                    } else if (event.type === HttpEventType.Response) {
+                        this.fileUploadSuccess = true
+                        this.onChange(this.filename)
+                        this.onValidatorChange()
                     }
                 })
         }
     }
 
-    registerOnChange(fn: (_: string) => void): void {
-      this.onChange = fn
+    onClick(fileUpload: HTMLInputElement) {
+        this.onTouched()
+        fileUpload.click()
     }
 
-    registerOnTouched(fn: any): void {}
+    registerOnChange(fn: (_: string) => void): void {
+        this.onChange = fn
+    }
+
+    registerOnTouched(fn: any): void {
+        this.onTouched = fn
+    }
 
     writeValue(value: string): void {
         this.filename = value
+    }
+
+    setDisabledState(isDisabled: boolean) {
+        this.isDisabled = isDisabled
+    }
+
+    registerOnValidatorChange(fn: () => void) {
+        this.onValidatorChange = fn
+    }
+
+    validate(control: AbstractControl): ValidationErrors | null {
+        if (this.fileUploadSuccess) {
+            return null
+        }
+
+        let errors: { requiredFileType: string; uploadFailed: boolean } = {
+            requiredFileType: this.requiredFileType,
+            uploadFailed: false,
+        }
+
+        if (this.fileUploadError) {
+            errors.uploadFailed = true
+        }
+
+        return errors
     }
 }
