@@ -42,7 +42,7 @@ import { CreateCourseStep1Component } from './create-course/create-course-step-1
 import { FileUploadComponent } from './file-upload/file-upload.component'
 import { MatProgressBarModule } from '@angular/material/progress-bar'
 import { LoginReactiveComponent } from './login-reactive/login-reactive.component'
-import {FileService} from './services/file.service';
+import { FileService } from './services/file.service'
 
 @NgModule({
     declarations: [
@@ -60,6 +60,7 @@ import {FileService} from './services/file.service';
         AddressFormComponent,
         FileUploadComponent,
         LoginReactiveComponent,
+        AddressFormComponent,
     ],
     imports: [
         BrowserModule,
