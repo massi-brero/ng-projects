@@ -78,7 +78,11 @@ export class AddressFormComponent
     }
 
     validate(control: AbstractControl): ValidationErrors | null {
-        console.log(this.form)
-        return this.form.errors
+      return Object.keys(this.form.controls).map((key) => {
+        let controlErrors = this.form.get(key).errors
+        if (controlErrors) {
+          return { key: controlErrors }
+        }
+      }).filter(el => el !== undefined) || null
     }
 }
