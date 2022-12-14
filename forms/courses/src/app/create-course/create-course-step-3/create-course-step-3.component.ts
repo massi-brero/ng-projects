@@ -12,6 +12,25 @@ export class CreateCourseStep3Component {
     constructor(private fb: FormBuilder) {}
 
     private initForm(): FormGroup {
-        return this.fb.group({})
+        return this.fb.group({
+          lessons: this.fb.array([])
+        })
     }
+
+    get lessons() {
+      return this.form.controls['lessons'] as FormArray
+    }
+
+  addLesson() {
+    const lessonForm = this.fb.group({
+      title: ['', Validators.required],
+      level: ['beginner', Validators.required]
+    })
+
+    this.lessons.push(lessonForm)
+  }
+
+  deleteLesson(idx: number) {
+    this.lessons.removeAt(idx)
+  }
 }

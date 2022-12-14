@@ -56,7 +56,7 @@ export class CreateCourseStep1Component implements OnInit {
         [Validators.required, Validators.minLength(3)],
       ],
       category: ['BEGINNER', Validators.required],
-      address: [null, Validators.required],
+      //address: [null, Validators.required],
     })
   }
 }
