@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { MatchersComponent } from './matchers/matchers.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import { DataComponent } from './data/data.component'
+import { DataComponent } from './data/data.component';
+import { AsynchronousComponent } from './asynchronous/asynchronous.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     MatchersComponent,
-    DataComponent
+    DataComponent,
+    AsynchronousComponent
   ],
   imports: [
     BrowserModule,
