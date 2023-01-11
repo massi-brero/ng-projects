@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
-    private service: CoursesService,
+    private coursesService: CoursesService,
     private loadingService: LoadingService
   ) {}
 
@@ -39,9 +39,11 @@ export class HomeComponent implements OnInit {
   }
 
   loadCourses() {
-    const courses$ = this.service
-      .loadAllCourses()
-      .pipe(map((courses: Course[]) => courses.sort(sortCoursesBySeqNo)))
+    this.loadingService.loadingOn()
+    const courses$ = this.coursesService.loadAllCourses().pipe(
+      map((courses: Course[]) => courses.sort(sortCoursesBySeqNo)),
+      finalize(() => this.loadingService.loadingOff())
+    )
 
     this.beginnerCourses$ = courses$.pipe(
       map((courses: Course[]) =>
