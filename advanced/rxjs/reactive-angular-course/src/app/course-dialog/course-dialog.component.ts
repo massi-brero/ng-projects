@@ -1,19 +1,21 @@
-import { AfterViewInit, Component, Inject } from '@angular/core'
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog'
-import { Course } from '../model/course'
-import { FormBuilder, FormGroup, Validators } from '@angular/forms'
-import * as moment from 'moment'
-import { CoursesService } from '../services/courses.service'
-import { LoadingService } from '../services/loading.service'
-import { MessagesService } from '../messages/services/messages.service'
-import { catchError } from 'rxjs/operators'
-import { throwError } from 'rxjs'
+import { AfterViewInit, Component, Inject } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import * as moment from 'moment';
+import { throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
+import { MessagesService } from '../messages/services/messages.service';
+import { Course } from '../model/course';
+import { CoursesService } from '../services/courses.service';
+import { CoursesStore } from '../services/courses.store';
+import { LoadingService } from '../services/loading.service';
 
 @Component({
   selector: 'course-dialog',
   templateUrl: './course-dialog.component.html',
   styleUrls: ['./course-dialog.component.css'],
-  providers: [LoadingService, MessagesService],
+  providers: [],
 })
 export class CourseDialogComponent implements AfterViewInit {
   form: FormGroup
@@ -23,12 +25,10 @@ export class CourseDialogComponent implements AfterViewInit {
     private fb: FormBuilder,
     private dialogRef: MatDialogRef<CourseDialogComponent>,
     @Inject(MAT_DIALOG_DATA) course: Course,
-    private coursesService: CoursesService,
-    private loadingService: LoadingService,
+    private coursesStore: CoursesStore,
     private messagesService: MessagesService
   ) {
     this.course = course
-
     this.form = fb.group({
       description: [course.description, Validators.required],
       category: [course.category, Validators.required],
@@ -42,23 +42,8 @@ export class CourseDialogComponent implements AfterViewInit {
   save() {
     const changes = this.form.value
 
-    const saveCourse$ = this.coursesService
-      .saveCourse(this.course.id, changes)
-      .pipe(
-        catchError((err) => {
-          const message = 'Could not save course.'
-          console.log(message, err)
-          this.messagesService.showErrors(message)
-
-          return throwError(err)
-        })
-      )
-
-    this.loadingService
-      .showLoaderUntilCompleted(saveCourse$)
-      .subscribe((val) => {
-        this.dialogRef.close(val)
-      })
+    this.coursesStore.saveCourse(this.course.id, changes).subscribe()
+    this.dialogRef.close(changes)
   }
 
   close() {
