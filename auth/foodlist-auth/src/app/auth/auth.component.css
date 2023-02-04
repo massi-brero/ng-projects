@@ -1,0 +1,7 @@
+.auth-buttons {
+  display: flex;
+}
+
+.auth-buttons .btn:not(:first-child) {
+  margin-left: 1rem;
+}
