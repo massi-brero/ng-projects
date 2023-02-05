@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { FormBuilder, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-auth",
@@ -7,12 +8,26 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AuthComponent implements OnInit {
   isLoginMode = true;
+  form = this.fb.group(
+    {
+      login: ["", [Validators.required, Validators.email]],
+      password: ["", [Validators.required, Validators.minLength(6)]],
+    },
+    { updateOn: "blur" }
+  );
 
-  constructor() {}
+  ngOnInit(): void {
+    this.form.reset();
+  }
+
+  constructor(private fb: FormBuilder) {}
 
   onSwitchMode() {
     this.isLoginMode = !this.isLoginMode;
   }
 
-  ngOnInit(): void {}
+  onSubmit() {
+    console.log(this.form.value);
+    this.form.reset();
+  }
 }
