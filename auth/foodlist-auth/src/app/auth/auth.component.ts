@@ -20,8 +20,6 @@ export class AuthComponent implements OnInit {
     this.form.reset();
   }
 
-  constructor(private fb: FormBuilder) {}
-
   onSwitchMode() {
     this.isLoginMode = !this.isLoginMode;
   }
