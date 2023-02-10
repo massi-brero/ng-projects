@@ -9,3 +9,9 @@
 .auth-error {
   border: 1px solid red;
 }
+
+.login-spinner {
+  text-align: center;
+}
+
+
