@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, Validators } from "@angular/forms";
+import { Router } from "@angular/router";
 import { Observable } from "rxjs";
 import { authResponseData, AuthService } from "./auth.service";
 
@@ -21,7 +22,11 @@ export class AuthComponent implements OnInit {
     { updateOn: "blur" }
   );
 
-  constructor(private authService: AuthService, private fb: FormBuilder) {}
+  constructor(
+    private authService: AuthService,
+    private fb: FormBuilder,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.form.reset();
@@ -38,7 +43,7 @@ export class AuthComponent implements OnInit {
 
     const email = this.form.value.email;
     const password = this.form.value.password;
-    let auth$: Observable<authResponseData>;
+    let auth$: Observable<string | authResponseData>;
 
     this.isLoading = true;
 
@@ -50,8 +55,8 @@ export class AuthComponent implements OnInit {
 
     auth$.subscribe(
       (res) => {
-        console.log(res);
         this.isLoading = false;
+        this.router.navigate(['/recipes'])
       },
       (err) => {
         this.error = err;
