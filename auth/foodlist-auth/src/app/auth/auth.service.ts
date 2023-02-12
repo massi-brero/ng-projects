@@ -1,14 +1,7 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
-import {
-  BehaviorSubject,
-  EMPTY,
-  Observable,
-  of,
-  Subject,
-  throwError,
-} from "rxjs";
+import { BehaviorSubject, Observable, throwError } from "rxjs";
 import { catchError, tap } from "rxjs/operators";
 import { environment } from "src/environments/environment";
 import { User } from "./user.model";
@@ -28,6 +21,7 @@ export interface authResponseData {
 export class AuthService {
   userSubj = new BehaviorSubject<User | null>(null);
   user$ = this.userSubj.asObservable();
+  private tokenExpirationTimer: any;
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -83,6 +77,7 @@ export class AuthService {
     const expirationDate = new Date(new Date().getTime() + expiresIn * 1000);
     const user = new User(email, userId, token, expirationDate);
     this.userSubj.next(user);
+    this.autoLogout(expiresIn * 1000);
     localStorage.setItem("userData", JSON.stringify(user));
   }
 
@@ -92,7 +87,7 @@ export class AuthService {
       id: string;
       _token: string;
       _tokenExpirationDate: string;
-    } = JSON.parse(localStorage.getItem("userData") ?? "");
+    } = JSON.parse(localStorage.getItem("userData") ?? "{}");
     console.log(userData);
 
     if (!userData) {
@@ -107,14 +102,37 @@ export class AuthService {
     );
 
     if (loadedUser.token) {
-
       this.userSubj.next(loadedUser);
+
+      const expirationDuration =
+        new Date(userData._tokenExpirationDate).getTime() -
+        new Date().getTime();
+      this.autoLogout(expirationDuration);
     }
   }
 
   logout() {
     this.userSubj.next(null);
     this.router.navigate(["/auth"]);
+    localStorage.removeItem("userData");
+
+    this.destroyExpirationTimer()
+  }
+
+  autoLogout(expirationDuration: number) {
+    console.log(expirationDuration);
+
+    this.destroyExpirationTimer();
+    this.tokenExpirationTimer = setTimeout(() => {
+      this.logout();
+    }, expirationDuration);
+  }
+
+  private destroyExpirationTimer() {
+    if (this.tokenExpirationTimer) {
+      clearTimeout(this.tokenExpirationTimer);
+    }
+    this.tokenExpirationTimer = null;
   }
 
   private handleError(err: HttpErrorResponse): Observable<any> {
