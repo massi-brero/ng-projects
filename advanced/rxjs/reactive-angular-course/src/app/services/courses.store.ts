@@ -33,7 +33,7 @@ export class CoursesStore {
     )
   }
 
-  saveCourse(courseId: string, changes: Partial<Course>): Observable<any> {}
+  saveCourse(courseId: string, changes: Partial<Course>): void {}
 
   private loadAllCourses() {
     const loadCourses$ = this.http
