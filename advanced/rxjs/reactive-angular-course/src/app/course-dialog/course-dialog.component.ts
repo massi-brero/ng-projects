@@ -1,15 +1,9 @@
-import { AfterViewInit, Component, Inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import * as moment from 'moment';
-import { throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-
-import { MessagesService } from '../messages/services/messages.service';
-import { Course } from '../model/course';
-import { CoursesService } from '../services/courses.service';
-import { CoursesStore } from '../services/courses.store';
-import { LoadingService } from '../services/loading.service';
+import {AfterViewInit, Component, Inject} from '@angular/core'
+import {FormBuilder, FormGroup, Validators} from '@angular/forms'
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog'
+import * as moment from 'moment'
+import {Course} from '../model/course'
+import {CoursesStore} from '../services/courses.store'
 
 @Component({
   selector: 'course-dialog',
@@ -26,7 +20,6 @@ export class CourseDialogComponent implements AfterViewInit {
     private dialogRef: MatDialogRef<CourseDialogComponent>,
     @Inject(MAT_DIALOG_DATA) course: Course,
     private coursesStore: CoursesStore,
-    private messagesService: MessagesService
   ) {
     this.course = course
     this.form = fb.group({
@@ -42,7 +35,7 @@ export class CourseDialogComponent implements AfterViewInit {
   save() {
     const changes = this.form.value
 
-    //this.coursesStore.saveCourse(this.course.id, changes).subscribe()
+    this.coursesStore.saveCourse(this.course.id, changes).subscribe()
     this.dialogRef.close(changes)
   }
 
