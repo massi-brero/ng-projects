@@ -4,6 +4,9 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog'
 import * as moment from 'moment'
 import {Course} from '../model/course'
 import {CoursesStore} from '../services/courses.store'
+import {catchError} from "rxjs/operators";
+import {throwError} from "rxjs";
+import {MessagesService} from "../messages/services/messages.service";
 
 @Component({
   selector: 'course-dialog',
@@ -18,6 +21,7 @@ export class CourseDialogComponent implements AfterViewInit {
   constructor(
     private fb: FormBuilder,
     private dialogRef: MatDialogRef<CourseDialogComponent>,
+    private messagesService: MessagesService,
     @Inject(MAT_DIALOG_DATA) course: Course,
     private coursesStore: CoursesStore,
   ) {

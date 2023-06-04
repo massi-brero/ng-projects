@@ -23,7 +23,7 @@ export class CoursesStore {
     this.loadAllCourses()
   }
 
-  filterByCategory(category: string): Observable<Course[]> {
+   filterByCategory(category: string): Observable<Course[]> {
     return this.courses$.pipe(
       map((courses) =>
         courses
@@ -48,7 +48,7 @@ export class CoursesStore {
     return this.http
       .put<Partial<Course>>(`${environment.apiCoursesUrl}/${courseId}`, changes)
       .pipe(
-        catchError(this.handleError()),
+        catchError(this.handleError('Could not save courses')),
         shareReplay())
   }
 
@@ -57,17 +57,16 @@ export class CoursesStore {
       .get<Course[]>(environment.apiCoursesUrl)
       .pipe(
         map((res) => res['payload']),
-        catchError(this.handleError()),
+        catchError(this.handleError('Could not load courses')),
         tap((courses: Course[]) => this.coursesSubj.next(courses))
       )
     this.loading.showLoaderUntilCompleted(loadCourses$).subscribe()
   }
 
-  private handleError(): (err: any, caught: Observable<any>) => ObservableInput<any> {
+  private handleError(message: string): (err: any, caught: Observable<any>) => ObservableInput<any> {
     return (err) => {
-      const msg = 'Could not load courses'
-      this.messages.showErrors(msg)
-      console.log(msg, err)
+      this.messages.showErrors(message)
+      console.log(message, err)
       return throwError(err)
     }
   }
