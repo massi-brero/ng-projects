@@ -4,10 +4,12 @@ import { Course } from '../model/course'
 import { Observable } from 'rxjs'
 import { environment } from '../../environments/environment'
 import { map, shareReplay } from 'rxjs/operators'
+import { Lesson } from '../model/lesson'
 
 @Injectable({ providedIn: 'root' })
 export class CoursesService {
   constructor(private http: HttpClient) {}
+
   loadAllCourses(): Observable<Course[]> {
     return this.http
       .get<HttpResponse<Course[]>>(environment.apiCoursesUrl)
@@ -23,5 +25,19 @@ export class CoursesService {
     return this.http
       .put(`${environment.apiCoursesUrl}/${courseId}`, changes)
       .pipe(shareReplay())
+  }
+
+  searchLessons(search: string): Observable<Lesson[]> {
+    return this.http
+      .get<Lesson[]>(environment.searchUrl, {
+        params: {
+          filter: search,
+          pageSize: '100',
+        },
+      })
+      .pipe(
+        map((res) => res['payload']),
+        shareReplay()
+      )
   }
 }
