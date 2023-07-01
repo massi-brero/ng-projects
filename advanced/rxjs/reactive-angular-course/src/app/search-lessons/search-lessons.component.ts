@@ -17,6 +17,7 @@ export class SearchLessonsComponent implements OnInit {
   ngOnInit() {}
 
   onSearch(search: string) {
+    this.activeLesson = null
     this.searchResults$ = this.coursesService.searchLessons(search)
   }
 
