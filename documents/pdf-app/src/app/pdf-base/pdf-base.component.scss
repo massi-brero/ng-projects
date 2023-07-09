@@ -1,0 +1,28 @@
+.c-wrapper {
+  padding: 8px;
+  width: 80%;
+  margin: 200px auto;
+
+  .modal-title {
+    margin-bottom: 8px;
+  }
+
+  .belege {
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: left;
+      background: #eeeeee;
+      padding: 1px;
+    }
+  }
+
+  button {
+    width: 200px;
+    margin-right: 8px;
+  }
+
+  buttons {
+    margin-bottom: 8px;
+  }
+}

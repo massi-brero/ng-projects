@@ -1,1 +1,38 @@
-<p>pdf-base works!</p>
+<div class="card c-wrapper">
+  <p>PDF POC</p>
+  <div class="buttons flex justify-content-between">
+    <button (click)="dataLoaded = true" class="btn btn-primary">Daten laden</button>
+    <button (click)="makePDF()" class="btn btn-success">PDF downloaden</button>
+  </div>
+  <div id="content" #content *ngIf="dataLoaded">
+    <hr>
+    <div class="paket-info">
+      <h3 class="modal-title">Paket</h3>
+      <p>Belegart: {{paket.data.paketIdentifikation.belegart}}</p>
+      <p>Erfassungstag: {{paket.data.paketIdentifikation.erfassungstag}}</p>
+      <p>Kontoauszugsnummer: {{paket.data.paketIdentifikation.kontoauszugsnummer}}</p>
+      <p>Paketnummer: {{paket.data.paketIdentifikation.paketnummer}}</p>
+    </div>
+    <hr>
+    <div class="belege">
+      <table>
+        <thead>
+        <tr>
+          <th>Lfd. Nummer</th>
+          <th>Einzahler</th>
+          <th>Betrag</th>
+          <th>Schecknummer</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let beleg of paket.data.zahlungen">
+          <td>{{beleg.laufendeNummer}}</td>
+          <td>{{beleg.einzahler}}</td>
+          <td>{{beleg.betrag}} &euro;</td>
+          <td>{{beleg.schecknummer}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
