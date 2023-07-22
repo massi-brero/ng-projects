@@ -6,6 +6,7 @@
 export const environment = {
   production: false,
   apiCoursesUrl: 'http://localhost:9000/api/courses',
+  apiLessonsUrl: 'http://localhost:9000/api/lessons',
   apiLoginUrl: 'http://localhost:9000/api/login',
   searchUrl: '/api/lessons',
 }
