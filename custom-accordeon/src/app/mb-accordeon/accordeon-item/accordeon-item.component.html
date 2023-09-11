@@ -1,0 +1,10 @@
+<div
+  class="accordeon-item-wrapper accordeon-box"
+  (click)="toggleOpen()"
+  [ngClass]="{ 'title-background': !isOpen }"
+>
+  <div class="item-title">
+    {{ title }}
+  </div>
+  <div class="item-copy" *ngIf="isOpen">{{ copy }}</div>
+</div>

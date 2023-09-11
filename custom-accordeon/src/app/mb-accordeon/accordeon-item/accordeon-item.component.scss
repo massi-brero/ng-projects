@@ -1,0 +1,37 @@
+$base-width: 100%;
+$padding-left: 1rem;
+$bckg-grey: lightgrey;
+
+%accordeon-box {
+  border-radius: 6px;
+  border: darkgray solid 1px;
+  padding: $padding-left;
+  justify-content: center;
+}
+
+.title-background {
+  background: $bckg-grey;
+}
+
+.accordeon-item-wrapper {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.item-title {
+  width: $base-width;
+  height: 1.25rem;
+  font-weight: 900;
+}
+
+.accordeon-box {
+  display: flex;
+  flex-direction: column;
+
+  @extend %accordeon-box;
+}
+
+.item-copy {
+  width: $base-width;
+  margin-top: 1rem;
+}
