@@ -1,7 +1,5 @@
 $base-width: 100%;
 $padding-left: 1rem;
-$bckg-grey: lightgrey;
-
 %accordeon-box {
   border-radius: 6px;
   border: darkgray solid 1px;
@@ -10,7 +8,7 @@ $bckg-grey: lightgrey;
 }
 
 .title-background {
-  background: $bckg-grey;
+  background: lighten(black, 96%);
 }
 
 .accordeon-item-wrapper {
