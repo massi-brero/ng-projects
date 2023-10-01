@@ -1,1 +1,7 @@
-<p>stars-rating works!</p>
+<div class="stars-container">
+  <ng-container *ngFor="let star of starsRow">
+    <span *ngIf="star.state === 0"><i class="fa-regular fa-star"></i></span>
+    <span *ngIf="star.state === 1"><i class="fa-solid fa-star-half-stroke"></i></span>
+    <span *ngIf="star.state === 2"><i class="fa-solid fa-star"></i></span>
+  </ng-container>
+</div>
