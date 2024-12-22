@@ -1,0 +1,24 @@
+<h1>ToDo List</h1>
+
+<mat-form-field class="todo-input">
+  <mat-label>Neues To Do</mat-label>
+  <input matInput #input />
+  <mat-icon matSuffix>edit</mat-icon>
+</mat-form-field>
+
+<mat-button-toggle-group #filter>
+  <mat-button-toggle value="all">Alle</mat-button-toggle>
+  <mat-button-toggle value="pending">Nicht abgeschlossen</mat-button-toggle>
+  <mat-button-toggle value="completed">Abgeschlossen</mat-button-toggle>
+</mat-button-toggle-group>
+
+<mat-selection-list class="todos-list">
+  @for (todo of store.todos(); track todo.id; let idx = $index) {
+    <mat-list-option>
+      <div class="todo-item">
+        <span>{{ todo.title }}</span>
+        <mat-icon class="delete-todo">delete</mat-icon>
+      </div>
+    </mat-list-option>
+  }
+</mat-selection-list>
