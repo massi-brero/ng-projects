@@ -7,14 +7,15 @@
 .todos-list,
 .todo-input {
   width: 100%;
+  position: relative;
+}
 
-  .input-wrapper {
-    display: flex;
-  }
-  mat-icon {
-    display: inline-block;
-    padding-bottom: 4px;
-  }
+.todo-input mat-icon {
+  position: absolute;
+  right: 4px;
+  bottom: calc(50% - 12px);
+  display: inline-block;
+  color: blue;
 }
 
 .todo-item {
