@@ -2,8 +2,10 @@
 
 <mat-form-field class="todo-input">
   <mat-label>Neues To Do</mat-label>
-  <input matInput #input />
-  <mat-icon matSuffix>edit</mat-icon>
+  <div class="input-wrapper">
+    <input matInput #input />
+    <mat-icon>edit</mat-icon>
+  </div>
 </mat-form-field>
 
 <mat-button-toggle-group #filter>

@@ -1,13 +1,20 @@
 import { Component, inject, OnInit } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 import { TodosStore } from './store/todo.store'
-import { JsonPipe } from '@angular/common'
+import { JsonPipe, NgIf } from '@angular/common'
 import { TodosListComponent } from './todos-list/todos-list.component'
+import { MatProgressSpinner } from '@angular/material/progress-spinner'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, JsonPipe, TodosListComponent],
+  imports: [
+    RouterOutlet,
+    JsonPipe,
+    TodosListComponent,
+    MatProgressSpinner,
+    NgIf,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

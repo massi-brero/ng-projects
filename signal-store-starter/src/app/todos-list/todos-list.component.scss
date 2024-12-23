@@ -7,14 +7,27 @@
 .todos-list,
 .todo-input {
   width: 100%;
+
+  .input-wrapper {
+    display: flex;
+  }
+  mat-icon {
+    display: inline-block;
+    padding-bottom: 4px;
+  }
 }
 
 .todo-item {
   display: flex;
   align-items: center;
+  span {
+    color: blue;
+  }
 }
 
 .delete-todo {
   margin: 10px;
   cursor: pointer;
+  padding-bottom: 8px;
+  color: red;
 }
