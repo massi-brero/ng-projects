@@ -27,4 +27,13 @@ import { TodosStore } from '../store/todo.store'
 })
 export class TodosListComponent {
   store = inject(TodosStore)
+
+  async onAddTodo(title: string) {
+    await this.store.addTodo(title)
+  }
+
+  async onDeleteTodo(id: number, e: MouseEvent) {
+    e.stopPropagation()
+    await this.store.deleteTodo(id)
+  }
 }

@@ -20,7 +20,6 @@ const initialState: TodosState = {
 export const TodosStore = signalStore(
   { providedIn: 'root' },
   withState(initialState),
-  // gibt Objekt zurück!
   withMethods((store, todosService = inject(TodoService)) => ({
     async loadAll() {
       patchState(store, { loading: true })
@@ -31,6 +30,20 @@ export const TodosStore = signalStore(
       const todo = await todosService.addTodo({ title, completed: false })
       patchState(store, state => ({
         todos: [...state.todos, todo],
+      }))
+    },
+    async deleteTodo(id: number) {
+      await todosService.deleteTodo(id)
+      patchState(store, state => ({
+        todos: state.todos.filter(todo => todo.id !== id),
+      }))
+    },
+    async updateTodo(id: number, completed: boolean) {
+      await todosService.updateTodo(id, completed)
+      patchState(store, state => ({
+        todos: state.todos.map(todo =>
+          todo.id === id ? { ...todo, completed } : todo
+        ),
       }))
     },
   }))

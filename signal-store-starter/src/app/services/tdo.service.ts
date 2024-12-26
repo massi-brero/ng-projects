@@ -16,6 +16,14 @@ export class TodoService {
       ...todo,
     } as Todo
   }
+
+  async deleteTodo(id: number) {
+    await sleep(500)
+  }
+
+  async updateTodo(id: number, completed: boolean) {
+    await sleep(500)
+  }
 }
 
 function sleep(delay: number) {

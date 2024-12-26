@@ -2,7 +2,7 @@
 
 <mat-form-field class="todo-input">
   <mat-label>Neues To Do</mat-label>
-  <input matInput #input />
+  <input matInput #input (keyup.enter)="onAddTodo(input.value)" />
   <mat-icon>edit</mat-icon>
 </mat-form-field>
 
@@ -14,10 +14,12 @@
 
 <mat-selection-list class="todos-list">
   @for (todo of store.todos(); track todo.id; let idx = $index) {
-    <mat-list-option>
+    <mat-list-option [selected]="todo.completed">
       <div class="todo-item">
         <span>{{ todo.title }}</span>
-        <mat-icon class="delete-todo">delete</mat-icon>
+        <mat-icon class="delete-todo" (click)="onDeleteTodo(todo.id, $event)"
+          >delete</mat-icon
+        >
       </div>
     </mat-list-option>
   }
