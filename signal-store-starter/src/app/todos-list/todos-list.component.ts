@@ -7,7 +7,7 @@ import {
   MatButtonToggleChange,
   MatButtonToggleGroup,
 } from '@angular/material/button-toggle'
-import { MatListOption, MatSelectionList } from '@angular/material/list'
+import { MatListOption } from '@angular/material/list'
 import { TodosFilter, TodosStore } from '../store/todo.store'
 import { NgStyle } from '@angular/common'
 
@@ -20,7 +20,6 @@ import { NgStyle } from '@angular/common'
     MatIcon,
     MatButtonToggleGroup,
     MatButtonToggle,
-    MatSelectionList,
     MatListOption,
     MatLabel,
     NgStyle,
