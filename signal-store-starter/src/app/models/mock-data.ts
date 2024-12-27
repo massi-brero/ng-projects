@@ -9,7 +9,7 @@ export const TODOS: Todo[] = [
   {
     id: 2,
     title: 'Complete project report',
-    completed: true,
+    completed: false,
   },
   {
     id: 3,
