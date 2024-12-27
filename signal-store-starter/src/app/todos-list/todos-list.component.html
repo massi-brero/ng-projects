@@ -12,7 +12,7 @@
   <mat-button-toggle value="completed">Abgeschlossen</mat-button-toggle>
 </mat-button-toggle-group>
 
-<mat-selection-list class="todos-list">
+<mat-selKection-list class="todos-list">
   @for (todo of store.filteredTodos(); track todo.id; let idx = $index) {
     <mat-list-option
       [selected]="todo.completed"
@@ -30,4 +30,4 @@
       </div>
     </mat-list-option>
   }
-</mat-selection-list>
+</mat-selKection-list>
