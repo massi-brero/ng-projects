@@ -14,16 +14,4 @@ import { toObservable, toSignal, outputToObservable, outputFromObservable } from
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-  counter = signal(0)
-
-  constructor() {
-    effect(() => {
-      console.log('counter: ', this.counter())
-    })
-  }
-
-  increment() {
-    this.counter.update((val) => val + 1)
-  }
-}
+export class HomeComponent {}
