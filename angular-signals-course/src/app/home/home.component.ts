@@ -16,13 +16,26 @@ import { CoursesServiceWithFetch } from '../services/courses-fetch.service'
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  courses = signal<Course[]>([])
-  coursesService = inject(CoursesServiceWithFetch)
+  #courses = signal<Course[]>([])
+  beginnerCourses = computed(() => {
+    const courses = this.#courses()
+    return courses.filter((course: Course) => course.category === 'BEGINNER')
+  })
+  advancedCourses = computed(() => {
+    const courses = this.#courses()
+    return courses.filter((course: Course) => course.category === 'ADVANCED')
+  })
+  coursesService = inject(CoursesService)
 
   constructor() {
+    effect(() => {
+      console.log('beginner courses: ', this.beginnerCourses())
+      console.log('advanced courses: ', this.advancedCourses())
+    })
+
     afterNextRender(() => {
       this.loadAllCourses().then(() => {
-        console.log(this.courses())
+        console.log(this.#courses())
       })
     })
   }
@@ -30,7 +43,7 @@ export class HomeComponent {
   async loadAllCourses() {
     try {
       const courses = await this.coursesService.loadAllCourses()
-      this.courses.set(courses)
+      this.#courses.set(courses.sort(sortCoursesBySeqNo))
     } catch (e) {
       alert('Error Loading Courses')
       console.error(e)
