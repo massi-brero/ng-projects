@@ -34,9 +34,7 @@ export class HomeComponent {
     })
 
     afterNextRender(() => {
-      this.loadAllCourses().then(() => {
-        console.log(this.#courses())
-      })
+      this.loadAllCourses()
     })
   }
 

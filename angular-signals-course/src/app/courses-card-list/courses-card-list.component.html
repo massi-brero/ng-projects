@@ -8,9 +8,9 @@
       <p>{{ course.longDescription }}</p>
     </div>
     <div class="course-actions">
-      <button class="btn">View Course</button>
-      <button class="btn">Edit</button>
-      <img src="/assets/icons/delete.svg" class="delete" role="button" alt="Delete Course" />
+      <button class="btn">Kurs ansehen</button>
+      <button class="btn" (click)="onEditCourse(course)">Ändern</button>
+      <img src="/assets/icons/delete.svg" class="delete" role="button" alt="Kurs löschen" />
     </div>
   </div>
 }

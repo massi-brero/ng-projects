@@ -1,14 +1,14 @@
 <div class="courses-panel">
-  <h3>All Courses</h3>
+  <h3>Alle Kurse</h3>
 
   <button class="btn">Add Course</button>
 
   <mat-tab-group>
-    <mat-tab label="Beginners">
+    <mat-tab label="Anfänger">
       <courses-card-list [courses]="beginnerCourses()" />
     </mat-tab>
 
-    <mat-tab label="Advanced">
+    <mat-tab label="Fortgeschrittene">
       <courses-card-list [courses]="advancedCourses()" />
     </mat-tab>
   </mat-tab-group>
