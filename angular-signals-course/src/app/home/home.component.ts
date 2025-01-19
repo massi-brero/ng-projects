@@ -1,13 +1,10 @@
-import { afterNextRender, Component, computed, effect, inject, Injector, signal } from '@angular/core'
+import { afterNextRender, Component, computed, effect, inject, signal } from '@angular/core'
 import { CoursesService } from '../services/courses.service'
 import { Course, sortCoursesBySeqNo } from '../models/course.model'
 import { MatTab, MatTabGroup } from '@angular/material/tabs'
 import { CoursesCardListComponent } from '../courses-card-list/courses-card-list.component'
 import { MatDialog } from '@angular/material/dialog'
-import { MessagesService } from '../messages/messages.service'
-import { catchError, from, throwError } from 'rxjs'
-import { toObservable, toSignal, outputToObservable, outputFromObservable } from '@angular/core/rxjs-interop'
-import { CoursesServiceWithFetch } from '../services/courses-fetch.service'
+import { openEditDialog } from '../edit-course-dialog/edit-course-dialog.component'
 
 @Component({
   selector: 'home',
@@ -26,6 +23,7 @@ export class HomeComponent {
     return courses.filter((course: Course) => course.category === 'ADVANCED')
   })
   coursesService = inject(CoursesService)
+  dialog = inject(MatDialog)
 
   constructor() {
     effect(() => {
@@ -51,6 +49,23 @@ export class HomeComponent {
   onCourseUpdated(updatedCourse: Course) {
     const courses = this.#courses()
     const newCourses = courses.map((course: Course) => (course.id === updatedCourse.id ? updatedCourse : course))
+    this.#courses.set(newCourses)
+  }
+
+  async onCourseDeleted(id: string) {
+    try {
+      await this.coursesService.deleteCourse(id)
+      const courses = this.#courses()
+      this.#courses.set(courses.filter((course: Course) => course.id !== id))
+    } catch (e) {}
+  }
+
+  async onAddCourse() {
+    const newCourse = await openEditDialog(this.dialog, {
+      mode: 'create',
+      title: 'Add Course',
+    })
+    const newCourses = [...this.#courses(), newCourse]
     this.#courses.set(newCourses)
   }
 }

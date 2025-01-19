@@ -1,15 +1,23 @@
 <div class="courses-panel">
   <h3>Alle Kurse</h3>
 
-  <button class="btn">Add Course</button>
+  <button class="btn" (click)="onAddCourse()">Add Course</button>
 
   <mat-tab-group>
     <mat-tab label="Anfänger">
-      <courses-card-list (courseUpdated)="onCourseUpdated($event)" [courses]="beginnerCourses()" />
+      <courses-card-list
+        (courseDeleted)="onCourseDeleted($event)"
+        (courseUpdated)="onCourseUpdated($event)"
+        [courses]="beginnerCourses()"
+      />
     </mat-tab>
 
     <mat-tab label="Fortgeschrittene">
-      <courses-card-list (courseUpdated)="onCourseUpdated($event)" [courses]="advancedCourses()" />
+      <courses-card-list
+        (courseDeleted)="onCourseDeleted($event)"
+        (courseUpdated)="onCourseUpdated($event)"
+        [courses]="advancedCourses()"
+      />
     </mat-tab>
   </mat-tab-group>
 </div>

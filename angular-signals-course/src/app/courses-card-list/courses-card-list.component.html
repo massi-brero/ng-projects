@@ -10,7 +10,13 @@
     <div class="course-actions">
       <button class="btn">Kurs ansehen</button>
       <button class="btn" (click)="onEditCourse(course)">Ändern</button>
-      <img src="/assets/icons/delete.svg" class="delete" role="button" alt="Kurs löschen" />
+      <img
+        src="/assets/icons/delete.svg"
+        (click)="onCourseDelete(course)"
+        class="delete"
+        role="button"
+        alt="Kurs löschen"
+      />
     </div>
   </div>
 }

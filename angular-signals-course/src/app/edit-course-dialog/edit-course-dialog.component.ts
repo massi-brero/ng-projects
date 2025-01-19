@@ -48,6 +48,18 @@ export class EditCourseDialogComponent {
 
     if (this.data?.mode === 'update') {
       await this.saveCourse(this.data.course!.id, courseData)
+    } else if (this.data?.mode === 'create') {
+      await this.createCourse(courseData)
+    }
+  }
+
+  async createCourse(course: Partial<Course>) {
+    try {
+      const newCourse = await this.coursesService.createCourse(course)
+      this.dialogRef.close(newCourse)
+    } catch (e) {
+      console.error(e)
+      alert('Fehler bein Speichern des neuen Kurses')
     }
   }
 
