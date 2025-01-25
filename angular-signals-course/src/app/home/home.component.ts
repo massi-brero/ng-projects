@@ -5,6 +5,7 @@ import { MatTab, MatTabGroup } from '@angular/material/tabs'
 import { CoursesCardListComponent } from '../courses-card-list/courses-card-list.component'
 import { MatDialog } from '@angular/material/dialog'
 import { openEditDialog } from '../edit-course-dialog/edit-course-dialog.component'
+import { LoadingService } from '../loading/loading.service'
 
 @Component({
   selector: 'home',
@@ -26,10 +27,10 @@ export class HomeComponent {
   dialog = inject(MatDialog)
 
   constructor() {
-    effect(() => {
+    /* effect(() => {
       console.log('beginner courses: ', this.beginnerCourses())
       console.log('advanced courses: ', this.advancedCourses())
-    })
+    })*/
 
     afterNextRender(() => {
       this.loadAllCourses()

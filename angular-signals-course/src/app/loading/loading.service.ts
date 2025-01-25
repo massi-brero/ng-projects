@@ -4,5 +4,14 @@ import { Injectable, signal } from '@angular/core'
   providedIn: 'root',
 })
 export class LoadingService {
-  loadingOn() {}
+  #loadingFlag = signal(false)
+  loading = this.#loadingFlag.asReadonly()
+
+  loadingOn() {
+    this.#loadingFlag.set(true)
+  }
+
+  loadingOff() {
+    this.#loadingFlag.set(false)
+  }
 }
