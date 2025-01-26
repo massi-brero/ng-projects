@@ -1,18 +1,17 @@
-import { Component, effect, inject, signal } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { MAT_DIALOG_DATA, MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog'
 import { Course } from '../models/course.model'
 import { EditCourseDialogData } from './edit-course-dialog.data.model'
 import { CoursesService } from '../services/courses.service'
 import { LoadingIndicatorComponent } from '../loading/loading.component'
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms'
-import { CourseCategoryComboboxComponent } from '../course-category-combobox/course-category-combobox.component'
-import { CourseCategory } from '../models/course-category.model'
 import { firstValueFrom } from 'rxjs'
+import { MessagesService } from '../messages/messages.service'
 
 @Component({
   selector: 'edit-course-dialog',
   standalone: true,
-  imports: [LoadingIndicatorComponent, ReactiveFormsModule, CourseCategoryComboboxComponent],
+  imports: [LoadingIndicatorComponent, ReactiveFormsModule],
   templateUrl: './edit-course-dialog.component.html',
   styleUrl: './edit-course-dialog.component.scss',
 })
@@ -20,6 +19,7 @@ export class EditCourseDialogComponent {
   protected readonly onclose = onclose
   dialogRef = inject(MatDialogRef)
   coursesService = inject(CoursesService)
+  messageService = inject(MessagesService)
 
   data: EditCourseDialogData = inject(MAT_DIALOG_DATA)
   fb = inject(FormBuilder)
@@ -59,7 +59,7 @@ export class EditCourseDialogComponent {
       this.dialogRef.close(newCourse)
     } catch (e) {
       console.error(e)
-      alert('Fehler bein Speichern des neuen Kurses')
+      this.messageService.showMessage('Fehler bein Speichern des neuen Kurses', 'error')
     }
   }
 
@@ -69,7 +69,7 @@ export class EditCourseDialogComponent {
       this.dialogRef.close(updatedCourse)
     } catch (e) {
       console.log(e)
-      alert(`Fehler beim Speichern.`)
+      this.messageService.showMessage(`Fehler beim Speichern.`, 'error')
     }
   }
 }

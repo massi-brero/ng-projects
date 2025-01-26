@@ -6,6 +6,7 @@ import { CoursesCardListComponent } from '../courses-card-list/courses-card-list
 import { MatDialog } from '@angular/material/dialog'
 import { openEditDialog } from '../edit-course-dialog/edit-course-dialog.component'
 import { LoadingService } from '../loading/loading.service'
+import { MessagesService } from '../messages/messages.service'
 
 @Component({
   selector: 'home',
@@ -25,6 +26,7 @@ export class HomeComponent {
   })
   coursesService = inject(CoursesService)
   dialog = inject(MatDialog)
+  messageService = inject(MessagesService)
 
   constructor() {
     /* effect(() => {
@@ -42,7 +44,7 @@ export class HomeComponent {
       const courses = await this.coursesService.loadAllCourses()
       this.#courses.set(courses.sort(sortCoursesBySeqNo))
     } catch (e) {
-      alert('Error Loading Courses')
+      this.messageService.showMessage('Error loading courses!', 'error')
       console.error(e)
     }
   }
