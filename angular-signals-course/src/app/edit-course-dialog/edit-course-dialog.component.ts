@@ -6,7 +6,7 @@ import { CoursesService } from '../services/courses.service'
 import { LoadingIndicatorComponent } from '../loading/loading.component'
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms'
 import { firstValueFrom } from 'rxjs'
-import { MessagesService } from '../messages/messages.service'
+import { MessageService } from '../messages/message.service'
 
 @Component({
   selector: 'edit-course-dialog',
@@ -19,7 +19,7 @@ export class EditCourseDialogComponent {
   protected readonly onclose = onclose
   dialogRef = inject(MatDialogRef)
   coursesService = inject(CoursesService)
-  messageService = inject(MessagesService)
+  messageService = inject(MessageService)
 
   data: EditCourseDialogData = inject(MAT_DIALOG_DATA)
   fb = inject(FormBuilder)

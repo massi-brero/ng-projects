@@ -6,7 +6,7 @@ import { CoursesCardListComponent } from '../courses-card-list/courses-card-list
 import { MatDialog } from '@angular/material/dialog'
 import { openEditDialog } from '../edit-course-dialog/edit-course-dialog.component'
 import { LoadingService } from '../loading/loading.service'
-import { MessagesService } from '../messages/messages.service'
+import { MessageService } from '../messages/message.service'
 
 @Component({
   selector: 'home',
@@ -26,7 +26,7 @@ export class HomeComponent {
   })
   coursesService = inject(CoursesService)
   dialog = inject(MatDialog)
-  messageService = inject(MessagesService)
+  messageService = inject(MessageService)
 
   constructor() {
     /* effect(() => {

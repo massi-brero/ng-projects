@@ -4,7 +4,7 @@ import { Message, MessageSeverity } from '../models/message.model'
 @Injectable({
   providedIn: 'root',
 })
-export class MessagesService {
+export class MessageService {
   #messageSignal = signal<Message | null>(null)
   message = this.#messageSignal.asReadonly()
 

@@ -1,5 +1,5 @@
 import { Component, effect, inject, linkedSignal, signal } from '@angular/core'
-import { MessagesService } from '../messages/messages.service'
+import { MessageService } from '../messages/message.service'
 
 @Component({
   selector: 'linked-signal-demo',
@@ -7,7 +7,7 @@ import { MessagesService } from '../messages/messages.service'
   styleUrl: './linked-signal-demo.component.scss',
 })
 export class LinkedSignalDemoComponent {
-  messageService = inject(MessagesService)
+  messageService = inject(MessageService)
 
   courses = [
     {

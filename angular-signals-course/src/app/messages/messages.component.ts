@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core'
-import { MessagesService } from './messages.service'
+import { MessageService } from './message.service'
 import { NgClass } from '@angular/common'
 
 @Component({
@@ -9,7 +9,7 @@ import { NgClass } from '@angular/common'
   imports: [NgClass],
 })
 export class MessagesComponent {
-  messageService = inject(MessagesService)
+  messageService = inject(MessageService)
   message = this.messageService.message
 
   onClose() {
