@@ -1,0 +1,7 @@
+<input
+  #searchbox
+  type="search"
+  placeholder="Search..."
+  [value]="state.keyword()"
+  (input)="state.setKeyword(searchbox.value)"
+/>
