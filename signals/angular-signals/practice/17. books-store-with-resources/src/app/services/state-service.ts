@@ -1,22 +1,43 @@
 import { Injectable, resource, signal } from '@angular/core';
 import { Book } from '../models/book';
+import { httpResource } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class StateService {
-  readonly apiBaseUrl = 'https://localhost:3000/api/books';
-  readonly wsBaseUrl = 'https://localhost:3000/ws';
+  readonly apiBaseUrl = 'http://localhost:3000/api/books';
+  readonly wsBaseUrl = 'ws://localhost:3000/ws';
 
   #keyword = signal<string>('');
-  #searchResults = resource({
-    params: () => ({ keyword: this.#keyword() }),
-    loader: (options) => this.#searchKeywordPromise(options.params.keyword),
-    defaultValue: [] as Book[],
-  });
+  // #searchResults = resource({
+  //   params: () => ({ keyword: this.#keyword() }),
+  //   loader: (options) => this.#search(options.params.keyword),
+  //   defaultValue: [] as Book[],
+  // });
+  #searchResult = httpResource<Book[]>(
+    () => ({
+      url: `${this.apiBaseUrl}/search`,
+      params: {
+        q: this.#keyword(),
+      },
+    }),
+    { defaultValue: [] },
+  );
 
-  get searchResults() {
-    return this.#searchResults.asReadonly();
+  #books = httpResource<Book[]>(
+    () => ({
+      url: `${this.apiBaseUrl}`,
+    }),
+    { defaultValue: [] },
+  );
+
+  get books() {
+    return this.#books.asReadonly();
+  }
+
+  get searchResult() {
+    return this.#searchResult.asReadonly();
   }
 
   get keyword() {
@@ -31,6 +52,4 @@ export class StateService {
     const url = `${this.apiBaseUrl}/search?keyword=${value}`;
     return fetch(url).then((response) => response.json());
   }
-
-  constructor() {}
 }
