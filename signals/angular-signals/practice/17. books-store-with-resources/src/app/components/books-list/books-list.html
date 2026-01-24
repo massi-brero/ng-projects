@@ -1,9 +1,12 @@
+@if(state.searchResult.isLoading()) {
+<app-busy />
+}
 <div class="scrollable">
-  @for(b of books.value(); track b.id) {
+  @for(b of state.searchResult.value(); track b.id) {
   <div
     class="book-entry"
-    [class.selected]="b.id === selectedBookId()"
-    (click)="selectedBookId.set(b.id)"
+    [class.selected]="b.id === state.selectedBookId()"
+    (click)="state.setSelecetedBookId"
   >
     <svg
       class="book-icon"
