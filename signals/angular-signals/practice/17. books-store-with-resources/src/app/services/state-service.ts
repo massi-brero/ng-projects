@@ -1,6 +1,15 @@
-import { Injectable, linkedSignal, resource, signal } from '@angular/core';
+import {
+  inject,
+  Injectable,
+  linkedSignal,
+  resource,
+  ResourceStreamItem,
+  signal,
+} from '@angular/core';
 import { Book } from '../models/book';
-import { httpResource } from '@angular/common/http';
+import { HttpClient, httpResource } from '@angular/common/http';
+import { rxResource } from '@angular/core/rxjs-interop';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -8,6 +17,8 @@ import { httpResource } from '@angular/common/http';
 export class StateService {
   readonly apiBaseUrl = 'http://localhost:3000/api/books';
   readonly wsBaseUrl = 'ws://localhost:3000/ws';
+  readonly httpClient = inject(HttpClient);
+
   #selectedBookId = linkedSignal<Book[], string>({
     source: () => this.#searchResult.value(),
     computation: (src, prev) => {
@@ -42,6 +53,27 @@ export class StateService {
     }),
     { defaultValue: this.#books.value() },
   );
+
+  #selectedBook = rxResource({
+    params: () => ({ id: this.#selectedBookId() }),
+    stream: (options) =>
+      options.params.id
+        ? this.httpClient.get<Book>(`${this.apiBaseUrl}/${options.params.id}`)
+        : of(null),
+    defaultValue: null,
+  });
+
+  #selectedStock = resource({
+    params: () => ({ id: this.#selectedBookId() }),
+    stream: async (options) => {
+      const res = signal<ResourceStreamItem<number>>({ value: 0 });
+      return res;
+    },
+  });
+
+  get selectedBook() {
+    return this.#selectedBook.asReadonly();
+  }
 
   get selectedBookId() {
     return this.#selectedBookId.asReadonly();

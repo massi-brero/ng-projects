@@ -6,7 +6,7 @@
   <div
     class="book-entry"
     [class.selected]="b.id === state.selectedBookId()"
-    (click)="state.setSelecetedBookId"
+    (click)="state.setSelecetedBookId(b.id)"
   >
     <svg
       class="book-icon"
