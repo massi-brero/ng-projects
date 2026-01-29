@@ -1,34 +1,32 @@
-import { Injectable } from "@angular/core";
-import { DinnerReview } from "../models/dinner-review.model";
-import { customError, CustomValidationError, FieldTree } from "@angular/forms/signals";
+import { Injectable } from '@angular/core';
+import { DinnerReview } from '../models/dinner-review.model';
+import { ValidationError, FieldTree } from '@angular/forms/signals';
 
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 export class ReviewsService {
+  async submitReview(reviewForm: FieldTree<DinnerReview>) {
+    await new Promise((resolve) => setTimeout(resolve, 4000));
+    const res: ValidationError[] = [];
 
-    async submitReview(reviewForm: FieldTree<DinnerReview>) {
-        await new Promise(resolve => setTimeout(resolve, 4000));
-        const res: CustomValidationError[] = [];
-
-        const review = reviewForm().value();
-        // If the email is not in the best-dinner.com domain, reject the review
-        if (!review.email.endsWith('@best-dinner.com')) {
-            res.push(customError({
-                message: 'Only best-dinner.com emails are allowed to submit reviews.', 
-                kind: 'email-domain', 
-                field: reviewForm.email
-            }));
-        }
-
-        // If the username is "Kobi Hari", he can only submit reviews as an author
-        if ((review.username.toLowerCase() === 'kobi hari') && (review.role !== 'author')) {
-            res.push(customError({
-                message: 'Kobi Hari can only submit reviews as an author.', 
-                kind: 'invalid-role', 
-                field: reviewForm.role
-            }));
-        }
-
-        return res.length ? res : undefined;
+    const review = reviewForm().value();
+    // If the email is not in the best-dinner.com domain, reject the review
+    if (!review.email.endsWith('@best-dinner.com')) {
+      res.push({
+        message: 'Only best-dinner.com emails are allowed to submit reviews.',
+        kind: 'email-domain',
+        field: reviewForm.email,
+      } as ValidationError);
     }
-    
+
+    // If the username is "Kobi Hari", he can only submit reviews as an author
+    if (review.username.toLowerCase() === 'kobi hari' && review.role !== 'author') {
+      res.push({
+        message: 'Kobi Hari can only submit reviews as an author.',
+        kind: 'invalid-role',
+        field: reviewForm.role,
+      } as ValidationError);
+    }
+
+    return res.length ? res : undefined;
+  }
 }

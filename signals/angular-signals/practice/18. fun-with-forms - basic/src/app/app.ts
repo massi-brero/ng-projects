@@ -29,19 +29,20 @@ export class App {
 
   readonly reviewForm = form(this.model, (path) => {
     required(path.username, { message: 'Username is required' });
-    required(path.email, { message: 'Email is required' });
+    required(path.email, {
+      message: 'Email is required',
+      when: (ctx) => ctx.valueOf(path.role) !== 'author',
+    });
     email(path.email, { message: 'Email must be valid' });
-
-    validate(path.description, ({ value }) => {
-      const wordArray = value().trim().split(/\s+/);
+    validate(path.description, (ctx) => {
+      const wordArray = ctx.valueOf(path.description).trim().split(/\s+/);
       const wordCount = (wordArray.length = 1 && wordArray[0] === '' ? 0 : wordArray.length);
-      console.log(value().trim().split(/\s+/));
-
-      return wordCount >= 10
+      const threshhold = ctx.valueOf(path.role) === 'author' ? 10 : 5;
+      return wordCount >= threshhold
         ? null
         : {
             kind: 'minWords',
-            message: `Description must be at least 10 words long (Currently there are ${wordCount} words)`,
+            message: `Description must be at least ${threshhold} words long (Currently there are ${wordCount} words)`,
           };
     });
   });
