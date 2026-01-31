@@ -2,18 +2,17 @@ import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DinnerReview } from './models/dinner-review.model';
 import {
-  customError,
   email,
-  Field,
+  FormField,
   form,
-  minLength,
   required,
   validate,
+  ValidationError,
 } from '@angular/forms/signals';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, Field],
+  imports: [CommonModule, FormField],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
@@ -28,9 +27,9 @@ export class App {
       recommendation: 'no-opinion',
     },
     service: {
-      rating: 1, 
-      recommendation: 'no-opinion'
-    }
+      rating: 1,
+      recommendation: 'no-opinion',
+    },
   });
 
   readonly reviewForm = form(this.model, (path) => {
@@ -51,10 +50,10 @@ export class App {
       // check that there are at least 10 words
       const wordCount = value.trim().split(/\s+/).length;
       if (wordCount < threshold) {
-        return customError({
+        return {
           kind: 'min-words',
           message: `Description needs to be at least ${threshold} words long (currently there are ${wordCount} words)`,
-        });
+        } as ValidationError;
       }
 
       return undefined;

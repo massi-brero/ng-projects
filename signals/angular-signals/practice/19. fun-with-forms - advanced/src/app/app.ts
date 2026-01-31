@@ -10,6 +10,9 @@ import {
   validate,
   ValidationError,
   validateTree,
+  disabled,
+  readonly,
+  hidden,
 } from '@angular/forms/signals';
 
 @Component({
@@ -32,14 +35,17 @@ export class App {
     required(path.username, {
       message: 'Username is required',
     });
-    required(path.email, {
-      message: 'Email is required',
-      when: (ctx) => ctx.valueOf(path.role) !== 'author',
-    });
+    // required(path.email, {
+    //   message: 'Email is required',
+    //   when: (ctx) => ctx.valueOf(path.role) !== 'author',
+    // });
+    // disabled(path.email, (ctx) => ctx.valueOf(path.role) === 'author');
+    // readonly(path.email, (ctx) => ctx.valueOf(path.role) === 'author');
+    hidden(path.email, (ctx: any) => ctx.valueOf(path.role) === 'author');
     email(path.email, {
       message: 'Email is not in the correct format',
     });
-    validate(path.description, (ctx) => {
+    validateTree(path.description, (ctx) => {
       const value = ctx.value();
       const threshold = ctx.valueOf(path.role) === 'author' ? 10 : 5;
 
@@ -57,24 +63,23 @@ export class App {
     validateTree(path, (ctx) => {
       const rating = ctx.valueOf(path.rating);
       const recommendation = ctx.valueOf(path.recommendation);
-      console.log(rating >= 4 && recommendation === 'not-recommend');
 
       if (rating >= 4 && recommendation === 'not-recommend') {
         return [
           {
             kind: 'inconsistent-rating-recommendation',
             message: 'High ratings should have a positive recommendation',
-            field: path.recommendation,
-          } as ValidationError,
+            fieldTree: ctx.fieldTreeOf(path.rating),
+          } as ValidationError.WithOptionalField,
           {
             kind: 'inconsistent-rating-recommendation',
             message: 'High ratings should have a positive recommendation',
-            field: path.rating,
-          } as ValidationError,
+            fieldTree: ctx.fieldTreeOf(path.recommendation),
+          } as ValidationError.WithOptionalField,
         ];
       }
 
-      return null;
+      return undefined;
     });
   });
 }
