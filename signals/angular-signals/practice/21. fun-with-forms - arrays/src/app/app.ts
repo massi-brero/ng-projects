@@ -1,18 +1,14 @@
-import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DinnerReview } from './models/dinner-review.model';
+import { Component, signal } from '@angular/core';
 import {
-  applyEach,
-  customError,
   email,
-  Field,
+  FormField as Field,
   form,
-  max,
-  min,
-  minLength,
   required,
   validate,
+  ValidationError,
 } from '@angular/forms/signals';
+import { DinnerReview } from './models/dinner-review.model';
 
 @Component({
   selector: 'app-root',
@@ -59,10 +55,10 @@ export class App {
       // check that there are at least 10 words
       const wordCount = value.trim().split(/\s+/).length;
       if (wordCount < threshold) {
-        return customError({
+        return {
           kind: 'min-words',
           message: `Description needs to be at least ${threshold} words long (currently there are ${wordCount} words)`,
-        });
+        } as ValidationError;
       }
 
       return undefined;
