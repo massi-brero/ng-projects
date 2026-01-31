@@ -8,6 +8,9 @@ import {
   required,
   validate,
   ValidationError,
+  max,
+  maxLength,
+  min,
 } from '@angular/forms/signals';
 
 @Component({
@@ -57,6 +60,18 @@ export class App {
       }
 
       return undefined;
+    });
+    max(path.food.rating, 5, {
+      message: 'Food rating cannot be more than 5',
+    });
+    min(path.food.rating, 0, {
+      message: 'Food rating cannot be less than 0',
+    });
+    max(path.service.rating, 5, {
+      message: 'Food rating cannot be more than 5',
+    });
+    min(path.service.rating, 0, {
+      message: 'Food rating cannot be less than 0',
     });
   });
 }
